@@ -1,0 +1,497 @@
+@CHARSET "UTF-8";
+@font-face {
+    font-family: 'gotham_bold_2';
+    src: url('../font/gotham_bold_2.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_book';
+    src: url('../font/gotham_book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriadpro_regular';
+    src: url('../font/myriadpro_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontGothamBold {
+    font-family: gotham_bold_2 !important;
+    font-weight: bold;
+}
+
+.fontGotham {
+    font-family: gotham_book !important;
+}
+
+.fontMyriadpro {
+    font-family: myriadpro_regular !important;
+}
+
+html,
+body {
+    /* 	width: 100%; */
+    /* 	height :100%; */
+    /* 	margin: 0px; */
+    /* 	padding: 0px; */
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('../img/background.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    /* 	background-image: linear-gradient(to bottom right, #808080, #ffffff 45%, #c5c5c5 98%); */
+}
+
+nav {
+    width: 100%;
+}
+
+a[href^="tel"] {
+    color: inherit;
+    /* Inherit text color of parent element. */
+    text-decoration: none;
+    /* Remove underline. */
+}
+
+.link-text-white {
+    color: #ffffff !important;
+}
+
+.link-text-white:hover {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.link-text-black {
+    color: #000000 !important;
+}
+
+.link-text-black:hover {
+    color: #000000 !important;
+    text-decoration: none;
+}
+
+.color-text-nav {
+    color: #1b1464 !important;
+}
+
+.jumbotron {
+    background: none;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    background-color: white !important;
+}
+
+.myNowrap {
+    white-space: nowrap !important;
+}
+
+#myHamburger:focus {
+    outline: 0;
+}
+
+.div-service-text {
+    border-bottom: 2px solid white;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+
+.last {
+    border-bottom: none !important;
+}
+
+.text-over-container {
+    position: relative;
+    text-align: center;
+}
+
+.text-over {
+    color: white;
+    font-size: 1.28em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hover-container {
+    position: relative;
+}
+
+.hover-text-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .8s ease;
+    opacity: 0;
+}
+
+.hover-text-container:hover {
+    opacity: 1;
+}
+
+.hover-header-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hover-header {
+    color: white;
+    font-size: 1.28em;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.hover-fade-header {
+    padding-bottom: 160px;
+    background-image: linear-gradient(to bottom, rgba(33, 33, 33, 0.4), rgba(33, 33, 33, 0.0));
+}
+
+.hover-text {
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    width: 80%;
+    /*padding: 48px 48px;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.p-4 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem!important;
+}
+
+.pb-5 {
+    padding-bottom: 1rem!important;
+}
+
+#section_space {
+    height: 1em;
+}
+
+#service_1 {
+    display: flex !important;
+}
+
+#service_2 {
+    display: none !important;
+}
+
+@media (min-width: 1025px) {
+    /* desktop screen */
+    #logoMobile {
+        display: none;
+    }
+    #myHr {
+        width: 85%;
+    }
+    #space_solu_dl {
+        white-space: nowrap;
+    }
+    #myNavbar {
+        font-size: 20px;
+    }
+    #myContent {
+        font-size: 20px;
+    }
+    #myContentDtl {
+        padding-left: 3rem;
+    }
+    #myFooter {
+        align-items: center;
+        background-color: #1b1464;
+        color: #ffffff !important;
+        height: 50px;
+        font-size: 18px;
+    }
+    #ftPhoneNo {
+        display: flex;
+        justify-content: center;
+        white-space: nowrap !important;
+        /*     	margin-top: -1px; */
+        /*     	margin-left: 30px; */
+    }
+    #ftMail {
+        display: flex;
+        white-space: nowrap !important;
+        justify-content: center;
+        /*     	margin-left: -80px; */
+    }
+    #ftFacebook {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: 80px;
+    }
+    #ftWeb {
+        display: flex;
+        white-space: nowrap !important;
+        /*     	margin-left: -30px; */
+    }
+    #myHamburger {
+        display: none;
+    }
+    #nav_e_cat_desk {
+        display: inline;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    /*tablet landscape screen */
+    #logoMobile {
+        display: none;
+    }
+    #myHr {
+        width: 85%;
+    }
+    #space_solu_dl {
+        white-space: nowrap;
+    }
+    #myNavbar {
+        font-size: 20px;
+    }
+    #myContent {
+        font-size: 20px;
+    }
+    #myContentDtl {
+        padding-left: 3rem;
+    }
+    #myFooter {
+        align-items: center;
+        background-color: #1b1464;
+        color: #ffffff !important;
+        height: 50px;
+        font-size: 16px;
+    }
+    #ftPhoneNo {
+        display: flex;
+        /*     	justify-content: center; */
+        white-space: nowrap !important;
+        /*     	margin-top: 2px; */
+        margin-left: 30px;
+    }
+    #ftMail {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: -80px;
+    }
+    #ftFacebook {
+        display: flex;
+        white-space: nowrap !important;
+        /*     	margin-left: -10px; */
+    }
+    #ftWeb {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: -30px;
+    }
+    #myHamburger {
+        display: none;
+    }
+    #nav_e_cat_desk {
+        display: inline;
+    }
+    .hover-header {
+        font-size: 1em;
+    }
+    .hover-text-container {
+        opacity: 1;
+    }
+    .hover-text {
+        font-size: 1em;
+    }
+    .text-over {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /*tablet portrait screen */
+    #headerDesktop {
+        display: none;
+    }
+    #concat_li1 {
+        display: none;
+    }
+    #concat_li2 {
+        display: none;
+    }
+    #myNavbar {
+        background-color: rgba(0, 0, 0, 0.7);
+        /*     	position: absolute; */
+        text-align: center;
+        font-size: 22px;
+    }
+    #myJumbotron {
+        /*     	padding-top: 76px !important; */
+        /*     	padding-top: 100px !important; */
+        margin-top: -24px !important;
+    }
+    #space_solu_dl {
+        white-space: normal;
+    }
+    #myContent {
+        font-size: 20px;
+    }
+    #myContentDtl {
+        padding-left: 1rem;
+    }
+    #myFooter {
+        align-items: center;
+        background-color: #1b1464;
+        color: #ffffff !important;
+        /* 		height: 180px !important; */
+        height: 60px !important;
+        font-size: 13px;
+    }
+    #ftPhoneNo {
+        display: flex;
+        /*     	justify-content: center; */
+        white-space: nowrap !important;
+        /*     	margin-top: 2px; */
+        margin-left: 10px;
+    }
+    #ftMail {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: -70px;
+    }
+    #ftFacebook {
+        display: flex;
+        white-space: nowrap !important;
+        /*     	margin-left: -10px; */
+    }
+    #ftWeb {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: -30px;
+    }
+    #nav_e_cat_desk {
+        display: inline;
+    }
+    .color-text-nav {
+        color: #ffffff !important;
+    }
+    .hover-header {
+        font-size: 1em;
+    }
+    .hover-text-container {
+        opacity: 1;
+    }
+    .hover-text {
+        font-size: 0.8em;
+    }
+    .text-over {
+        font-size: 0.9em;
+    }
+    .hover-header {
+        padding-top: 0.68em;
+    }
+}
+
+@media (max-width: 767px) {
+    /*mobile portrait and landscape screen*/
+    #headerDesktop {
+        display: none;
+    }
+    #concat_li1 {
+        display: none;
+    }
+    #concat_li2 {
+        display: none;
+    }
+    #myNavbar {
+        background-color: rgba(0, 0, 0, 0.7);
+        /*     	position: absolute; */
+        text-align: center;
+    }
+    #myJumbotron {
+        /*     	padding-top: 76px !important; */
+        /*     	padding-top: 100px !important; */
+        margin-top: -24px !important;
+    }
+    #space_solu_dl {
+        white-space: normal;
+    }
+    #myContentDtl {
+        padding-left: 1rem;
+    }
+    #myFooter {
+        align-items: center;
+        background-color: #1b1464;
+        color: #ffffff !important;
+        height: 160px;
+    }
+    #ftPhoneNo {
+        display: flex;
+        /*     	justify-content: center; */
+        white-space: nowrap !important;
+        /*     	margin-top: 2px; */
+        margin-left: 12px;
+    }
+    #ftMail {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: 12px;
+    }
+    #ftFacebook {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: 12px;
+    }
+    #ftWeb {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: 12px;
+    }
+    #nav_e_cat_desk {
+        display: none;
+    }
+    .color-text-nav {
+        color: #ffffff !important;
+    }
+    .hover-text-container {
+        opacity: 1;
+    }
+    .hover-text {
+        font-size: 1em;
+    }
+    .text-over {
+        font-size: 1.6em;
+    }
+    .p-4 {
+        padding-top: 0.2rem !important;
+        padding-bottom: 0.2rem!important;
+    }
+    .pb-5 {
+        padding-bottom: 0.5rem!important;
+    }
+    #service_1 {
+        display: none !important;
+    }
+    #service_2 {
+        display: flex !important;
+    }
+}
