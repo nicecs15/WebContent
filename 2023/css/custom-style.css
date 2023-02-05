@@ -283,6 +283,11 @@ a[href^="tel"] {
     display: none !important;
 }
 
+.fontSizeCompnanyProduct {
+    color: #ffffff !important;
+    text-align: center;
+}
+
 @media (min-width: 1025px) {
     /* desktop screen */
     #logoMobile {
@@ -338,6 +343,37 @@ a[href^="tel"] {
     }
     #nav_e_cat_desk {
         display: inline;
+    }
+    /* ขนาดหน้าจอ web  pageindex */
+    .section-title {
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+    .section-sub {
+        padding-top: 70px;
+        padding-bottom: 10px;
+    }
+    .img-fluid1 {
+        max-width: 550px;
+    }
+    .row.flex-row {
+        padding-right: 10px;
+    }
+    .row.flex-row-reverse {
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    .cservice {
+        padding: 0px 15px 0px 0px
+    }
+    /* ขนาดหน้าจอ web  สินค้า pagecompany */
+    .padingrow {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .padingImgeCol {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
 
@@ -407,6 +443,14 @@ a[href^="tel"] {
     }
     .text-over {
         font-size: 0.9em;
+    }
+    .padingrow {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .padingImgeCol {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
 
@@ -492,6 +536,23 @@ a[href^="tel"] {
     .hover-header {
         padding-top: 0.68em;
     }
+    /* sizeimage */
+    .img-fluid1 {
+        max-width: 350px;
+        height: auto;
+        object-fit: cover;
+    }
+    .col-md-6 {
+        padding: 0px 0px 0px 0px;
+    }
+    .padingrow {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .padingImgeCol {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -553,7 +614,7 @@ a[href^="tel"] {
         display: none;
     }
     .color-text-nav {
-        color: #ffffff !important;
+        color: blue !important;
     }
     .hover-text-container {
         opacity: 1;
@@ -576,5 +637,21 @@ a[href^="tel"] {
     }
     #service_2 {
         display: flex !important;
+    }
+    /* ขนาดหน้าจอ padding pageindex services*/
+    .section-title {
+        padding-top: 20px;
+    }
+    .phonespace {
+        padding-top: 20px;
+    }
+    /* ขนาดหน้าจอ มือถือ pagecompany สินค้า */
+    .padingrow {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .padingImgeCol {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
