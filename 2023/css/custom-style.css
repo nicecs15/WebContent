@@ -330,7 +330,7 @@ a[href^="tel"] {
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
-        margin-left: 80px;
+        margin-left: 50px;
         padding-left: 0px;
     }
     #ftline {
@@ -425,22 +425,21 @@ a[href^="tel"] {
         /*     	justify-content: center; */
         white-space: nowrap !important;
         /*     	margin-top: 2px; */
-        margin-left: 30px;
     }
     #ftMail {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -80px;
+        justify-content: center;
+        margin-left: -35px;
     }
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
-        /*     	margin-left: -10px; */
     }
     #ftline {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -30px;
+        padding-left: 60px;
     }
     #myHamburger {
         display: none;
@@ -469,7 +468,16 @@ a[href^="tel"] {
         padding-left: 0px;
     }
     .lgmd {
-        padding-left: 100px;
+        padding-left: 10px;
+    }
+    .img-fluid-tower {
+        max-width: 470px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .img-fluid-company {
+        max-width: 450px;
+        text-align: center;
     }
 }
 
@@ -514,25 +522,23 @@ a[href^="tel"] {
     }
     #ftPhoneNo {
         display: flex;
-        /*     	justify-content: center; */
+        justify-content: center;
         white-space: nowrap !important;
-        /*     	margin-top: 2px; */
-        margin-left: 10px;
+        margin-left: -35px;
     }
     #ftMail {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -70px;
     }
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
-        /*     	margin-left: -10px; */
+        margin-left: -25px;
     }
     #ftline {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -30px;
+        margin-left: 5px;
     }
     #nav_e_cat_desk {
         display: inline;
@@ -556,11 +562,6 @@ a[href^="tel"] {
         padding-top: 0.68em;
     }
     /* sizeimage */
-    .img-fluid1 {
-        max-width: 350px;
-        height: auto;
-        object-fit: cover;
-    }
     .col-md-6 {
         padding: 0px 0px 0px 0px;
     }
@@ -573,7 +574,9 @@ a[href^="tel"] {
         padding-left: 0px;
     }
     .img-fluid-company {
-        height: 400px;
+        padding-left: 20px;
+        max-width: 550px;
+        height: auto;
     }
 }
 
@@ -688,7 +691,7 @@ a[href^="tel"] {
         max-width: 555px;
     }
     .lgmd {
-        padding-right: 300px;
+        padding-right: auto;
         margin-bottom: 10px;
     }
 }
