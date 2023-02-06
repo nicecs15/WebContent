@@ -1,60 +1,41 @@
 @CHARSET "UTF-8";
 @font-face {
-    font-family: 'gotham_bold_2';
-    src: url('../font/gotham_bold_2.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gotham_book';
-    src: url('../font/gotham_book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'myriadpro_regular';
-    src: url('../font/myriadpro_regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: GL;
     src: url(Fonts/Gotham-Light.otf);
 }
 
 @font-face {
     font-family: GB;
-    src: url(Fonts/Gotham-Bold.otf);
+    src: url(../fonts/Gotham-Bold.otf);
 }
 
 @font-face {
     font-family: GBook;
-    src: url(Fonts/Gotham-Book.otf);
+    src: url(../fonts/Gotham-Book.otf);
 }
 
 @font-face {
     font-family: GM;
-    src: url(Fonts/Gotham-Medium.otf);
-}
-
-.fontGothamBold {
-    font-family: gotham_bold_2 !important;
-    font-weight: bold;
-}
-
-.fontGotham {
-    font-family: gotham_book !important;
-}
-
-.fontMyriadpro {
-    font-family: myriadpro_regular !important;
+    src: url(../fonts/Gotham-Medium.otf);
 }
 
 .FontGL {
-    font-family: GM;
+    font-family: GL;
+}
+
+.FontGLB {
+    font-family: GL;
+    font-weight: bold;
+}
+
+.FontGBook {
+    font-family: GBook;
+}
+
+.FontGBookB {
+    font-family: GBook;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .FontGB {
@@ -66,6 +47,13 @@
     font-family: GM;
 }
 
+.subtitle {
+    font-family: GBook;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: larger;
+}
+
 html,
 body {
     /* 	width: 100%; */
@@ -73,7 +61,7 @@ body {
     /* 	margin: 0px; */
     /* 	padding: 0px; */
     width: 100% !important;
-    min-width: 0 !important;
+    min-width: none !important;
     max-width: none !important;
     overflow-x: hidden;
 }
@@ -93,6 +81,17 @@ body {
     border-width: 0;
     background-color: rgb(0, 0, 0);
     margin: 5px 0px;
+}
+
+.submit {
+    background: rgb(42, 57, 135);
+    color: white;
+    font-size: medium;
+    border-radius: 20px;
+    padding: 2px 20px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px
 }
 
 nav {
@@ -332,10 +331,12 @@ a[href^="tel"] {
         display: flex;
         white-space: nowrap !important;
         margin-left: 80px;
+        padding-left: 0px;
     }
-    #ftWeb {
+    #ftline {
         display: flex;
         white-space: nowrap !important;
+        padding-left: 50px;
         /*     	margin-left: -30px; */
     }
     #myHamburger {
@@ -356,6 +357,9 @@ a[href^="tel"] {
     .img-fluid1 {
         max-width: 550px;
     }
+    .img-fluid-tower {
+        max-width: 554px;
+    }
     .row.flex-row {
         padding-right: 10px;
     }
@@ -374,6 +378,18 @@ a[href^="tel"] {
     .padingImgeCol {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .img-fluid-company {
+        max-width: 600px;
+        overflow: hidden;
+        height: auto;
+        text-align: center;
+    }
+    .img-fluid-tower {
+        max-width: 565px;
+        overflow: hidden;
+        height: auto;
+        text-align: center;
     }
 }
 
@@ -421,7 +437,7 @@ a[href^="tel"] {
         white-space: nowrap !important;
         /*     	margin-left: -10px; */
     }
-    #ftWeb {
+    #ftline {
         display: flex;
         white-space: nowrap !important;
         margin-left: -30px;
@@ -451,6 +467,9 @@ a[href^="tel"] {
     .padingImgeCol {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .lgmd {
+        padding-left: 100px;
     }
 }
 
@@ -510,7 +529,7 @@ a[href^="tel"] {
         white-space: nowrap !important;
         /*     	margin-left: -10px; */
     }
-    #ftWeb {
+    #ftline {
         display: flex;
         white-space: nowrap !important;
         margin-left: -30px;
@@ -519,7 +538,7 @@ a[href^="tel"] {
         display: inline;
     }
     .color-text-nav {
-        color: #ffffff !important;
+        color: #1b1464;
     }
     .hover-header {
         font-size: 1em;
@@ -552,6 +571,9 @@ a[href^="tel"] {
     .padingImgeCol {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .img-fluid-company {
+        height: 400px;
     }
 }
 
@@ -605,7 +627,7 @@ a[href^="tel"] {
         white-space: nowrap !important;
         margin-left: 12px;
     }
-    #ftWeb {
+    #ftline {
         display: flex;
         white-space: nowrap !important;
         margin-left: 12px;
@@ -653,5 +675,20 @@ a[href^="tel"] {
     .padingImgeCol {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .padingImgeColTower {
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+    .padingImgerowTower {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .img-fluid-tower {
+        max-width: 555px;
+    }
+    .lgmd {
+        padding-right: 300px;
+        margin-bottom: 10px;
     }
 }
