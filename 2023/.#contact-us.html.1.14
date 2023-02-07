@@ -13,8 +13,6 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/postdata.js"></script>
-
 </head>
 
 <body>
@@ -53,7 +51,7 @@
 
         <main role="main" onClick="collapsedBurger();">
             <div class="text-center pt-4" id="myJumbotron">
-                <img src="img/banner.png" class="img-fluid" style="width: 1125px;" alt="">
+                <img src="img/banner.png" class="img-fluid" style="width: 1100px;" alt="">
             </div>
 
         </main>
@@ -107,31 +105,31 @@
 
                         <div class="row pl-3">
                             <div class="col-lg-12 media-body p-2">
-                                <input id="fname" class="col-12 form-control" type="text" placeholder="First Name">
+                                <input class="col-12 form-control" type="text" placeholder="First Name">
                             </div>
                             <div class="col-lg-12 media-body p-2">
-                                <input id="lname" class="col-12 form-control" type="text" placeholder="Last Name">
-                            </div>
-                        </div>
-
-                        <div class="row pl-3">
-                            <div class="col-lg-12 media-body p-2">
-                                <input id="email" class="col-12 form-control" type="text" placeholder="E-mail Address">
-                            </div>
-                            <div class="col-lg-12 media-body p-2">
-                                <input id="phone" class="col-12 form-control" type="text" placeholder="Phone Number">
+                                <input class="col-12 form-control" type="text" placeholder="Last Name">
                             </div>
                         </div>
 
                         <div class="row pl-3">
                             <div class="col-lg-12 media-body p-2">
-                                <textarea id="comment" class="form-control" placeholder="Your Request" rows="5" cols="6"></textarea>
+                                <input class="col-12 form-control" type="text" placeholder="E-mail Address">
+                            </div>
+                            <div class="col-lg-12 media-body p-2">
+                                <input class="col-12 form-control" type="text" placeholder="Phone Number">
+                            </div>
+                        </div>
+
+                        <div class="row pl-3">
+                            <div class="col-lg-12 media-body p-2">
+                                <textarea class="form-control" placeholder="Your Request" rows="5" cols="6"></textarea>
                             </div>
                         </div>
                         <!-- /SUBMIT -->
                         <div class="row ml-0 d-flex justify-content-around">
                             <div class="col media-body p-2">
-                                <a onclick="postApi(); " class="link-text-white myNowrap FontGBook submit">SUBMIT</a>
+                                <a href="" class="link-text-white myNowrap FontGBook submit">SUBMIT</a>
                             </div>
                         </div>
 
@@ -144,6 +142,7 @@
     </div>
     <!-- //////////////////////FOOTER////////////////////// -->
     <div id="myFooter" class="row mt-5 d-flex justify-content-center" onClick="collapsedBurger();">
+
         <div id="ftcon">
             <a id="ftMail" href="mailto:export@modernform.co.th" target="_blank" class="link-text-white col-md-3 fontGotham align-items-center">
                 <img src="img/footer/path350.png" width="22" height="22" alt="">
@@ -165,9 +164,11 @@
             <span>&nbsp;@modernform</span>
         </a>
 
+
         <a id="ftlogo" href="https://www.modernform.co.th/ " target="_blank " class="col-md-2">
             <img src="img/footer/footermodernform.png " alt=" ">
         </a>
+
     </div>
     <!-- /FOOTER -->
 

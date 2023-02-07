@@ -34,7 +34,7 @@
 
 .FontGBookB {
     font-family: GBook;
-    font-weight: bolder;
+    font-weight: bold;
     letter-spacing: 2px;
 }
 
@@ -91,8 +91,7 @@ body {
     padding: 2px 20px;
     display: inline-block;
     text-align: center;
-    letter-spacing: 2px;
-    cursor: pointer;
+    letter-spacing: 2px
 }
 
 nav {
@@ -289,7 +288,7 @@ a[href^="tel"] {
 }
 
 @media (min-width: 1025px) {
-    /* desktop screen **/
+    /* desktop screen */
     #logoMobile {
         display: none;
     }
@@ -319,35 +318,26 @@ a[href^="tel"] {
         display: flex;
         justify-content: center;
         white-space: nowrap !important;
-        padding: 0px;
-        margin-left: 0px;
         /*     	margin-top: -1px; */
         /*     	margin-left: 30px; */
     }
     #ftMail {
         display: flex;
         white-space: nowrap !important;
-        padding-left: 0px;
-        margin-left: 0px;
+        justify-content: center;
         /*     	margin-left: -80px; */
     }
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
-        padding: 0px 0px;
-        margin-right: 10px;
+        margin-left: 50px;
+        padding-left: 0px;
     }
     #ftline {
         display: flex;
         white-space: nowrap !important;
-        padding: 0px 0px;
-        margin-left: 10px;
+        padding-left: 50px;
         /*     	margin-left: -30px; */
-    }
-    #ftlogo {
-        display: flex;
-        white-space: nowrap !important;
-        margin-left: 20px;
     }
     #myHamburger {
         display: none;
@@ -390,7 +380,7 @@ a[href^="tel"] {
         padding-left: 0px;
     }
     .img-fluid-company {
-        max-width: 570px;
+        max-width: 600px;
         overflow: hidden;
         height: auto;
         text-align: center;
@@ -435,31 +425,21 @@ a[href^="tel"] {
         /*     	justify-content: center; */
         white-space: nowrap !important;
         /*     	margin-top: 2px; */
-        margin-left: 0px;
-        padding: 0px 5px;
     }
     #ftMail {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -80px;
-        padding: 0px 5px;
+        justify-content: center;
+        margin-left: -35px;
     }
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
-        /*     	margin-left: -10px; */
-        margin-left: -30px;
-        padding: 0px 5px;
     }
     #ftline {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -0px;
-    }
-    #ftlogo {
-        display: flex;
-        white-space: nowrap !important;
-        margin-left: 20px;
+        padding-left: 60px;
     }
     #myHamburger {
         display: none;
@@ -487,19 +467,17 @@ a[href^="tel"] {
         padding-right: 0px;
         padding-left: 0px;
     }
-    .section-title {
-        padding-top: 50px;
-        white-space: wrap;
-        text-overflow: ellipsis;
-    }
-    .img-fluid-company {
-        max-width: 500px;
+    .lgmd {
+        padding-left: 10px;
     }
     .img-fluid-tower {
-        max-width: 485px;
+        max-width: 470px;
+        overflow: hidden;
+        text-align: center;
     }
-    .padingImgeColTower {
-        padding-left: 0px;
+    .img-fluid-company {
+        max-width: 450px;
+        text-align: center;
     }
 }
 
@@ -544,7 +522,7 @@ a[href^="tel"] {
     }
     #ftPhoneNo {
         display: flex;
-        /*     	justify-content: center; */
+        justify-content: center;
         white-space: nowrap !important;
         /*     	margin-top: 2px; */
         margin-left: -25px;
@@ -552,25 +530,16 @@ a[href^="tel"] {
     #ftMail {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -70px;
     }
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
-        margin-left: 5px;
-        padding: 0px 5px;
-        /*     	margin-left: -10px; */
+        margin-left: -25px;
     }
     #ftline {
         display: flex;
         white-space: nowrap !important;
         margin-left: 5px;
-        margin-right: 5px;
-    }
-    #ftlogo {
-        display: flex;
-        white-space: nowrap !important;
-        margin-left: 10px;
     }
     #nav_e_cat_desk {
         display: inline;
@@ -594,11 +563,6 @@ a[href^="tel"] {
         padding-top: 0.68em;
     }
     /* sizeimage */
-    .img-fluid1 {
-        max-width: 350px;
-        height: auto;
-        object-fit: cover;
-    }
     .col-md-6 {
         padding: 0px 0px 0px 0px;
     }
@@ -611,23 +575,17 @@ a[href^="tel"] {
         padding-left: 0px;
     }
     .img-fluid-company {
-        max-width: 370px;
-        overflow: hidden;
+        padding-left: 20px;
+        max-width: 400px;
         height: auto;
-        text-align: center;
     }
     .section-title {
         padding-top: 20px;
-        white-space: wrap;
-        text-overflow: ellipsis;
     }
 }
 
 @media (max-width: 767px) {
     /*mobile portrait and landscape screen*/
-    #imgDel {
-        display: none;
-    }
     #headerDesktop {
         display: none;
     }
@@ -686,11 +644,6 @@ a[href^="tel"] {
         white-space: nowrap !important;
         margin-left: 12px;
     }
-    #ftlogo {
-        display: flex;
-        white-space: nowrap !important;
-        margin-left: 12px;
-    }
     #nav_e_cat_desk {
         display: none;
     }
@@ -743,10 +696,8 @@ a[href^="tel"] {
         padding-right: 0px;
         padding-left: 0px;
     }
-    .img-fluid-company {
-        max-width: 450px;
-        overflow: auto;
-        height: auto;
+    .img-fluid-tower {
+        max-width: 555px;
     }
     .lgmd {
         padding-right: auto;

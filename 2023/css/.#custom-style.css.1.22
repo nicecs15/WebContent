@@ -91,8 +91,7 @@ body {
     padding: 2px 20px;
     display: inline-block;
     text-align: center;
-    letter-spacing: 2px;
-    cursor: pointer;
+    letter-spacing: 2px
 }
 
 nav {
