@@ -396,16 +396,13 @@ a[href^="tel"] {
         padding-top: 70px;
         padding-bottom: 10px;
     }
+    .img-fluid-company1 {
+        max-width: 580px;
+        height: 100%;
+    }
     .img-fluid-company {
-        max-width: 560px;
-        display: flex;
-    }
-    .img-fluid-tower {
-        max-width: 570px;
-        display: flex;
-    }
-    .row.flex-row {
-        padding-right: 10px;
+        max-width: 580px;
+        height: 100%;
     }
     .row.flex-row-reverse {
         padding-left: 15px;
@@ -425,7 +422,7 @@ a[href^="tel"] {
     }
 }
 
-@media (min-width: 993px) and (max-width: 1024px) {
+@media (min-width: 993px) and (max-width: 1200px) {
     /*tablet landscape screen */
     #logoMobile {
         display: none;
