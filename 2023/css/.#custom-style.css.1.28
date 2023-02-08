@@ -32,17 +32,10 @@
     font-family: GBook;
 }
 
-.FontGBook2 {
-    font-family: GBook;
-    letter-spacing: 0.5px;
-    line-height: 25px;
-}
-
 .FontGBookB {
     font-family: GBook;
     font-weight: bolder;
     letter-spacing: 2px;
-    line-height: 30px;
 }
 
 .FontGB {
@@ -164,17 +157,8 @@ a[href^="tel"] {
     font-weight: bold;
 }
 
-.bold {
-    font-weight: bold;
-}
-
 .link-text-blue-bold {
     color: #1b1464 !important;
-    font-weight: bold;
-}
-
-.link-text-blue-bold2 {
-    color: rgb(42, 57, 135)!important;
     font-weight: bold;
 }
 
@@ -227,22 +211,6 @@ a[href^="tel"] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.endtitle::after {
-    content: "";
-    background-color: rgb(51, 51, 51);
-}
-
-.linearG::after {
-    content: "";
-    background: linear-gradient( rgba(51, 51, 51, 0) 0%, rgb(51, 51, 51) 100%);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin-bottom: -5px;
 }
 
 .hover-container {
@@ -389,20 +357,18 @@ a[href^="tel"] {
     }
     /* ขนาดหน้าจอ web  pageindex */
     .section-title {
-        padding-top: 60px;
+        padding-top: 100px;
         padding-bottom: 10px;
     }
     .section-sub {
         padding-top: 70px;
         padding-bottom: 10px;
     }
-    .img-fluid-company {
-        max-width: 560px;
-        display: flex;
+    .img-fluid1 {
+        max-width: 550px;
     }
     .img-fluid-tower {
-        max-width: 570px;
-        display: flex;
+        max-width: 554px;
     }
     .row.flex-row {
         padding-right: 10px;
@@ -422,6 +388,18 @@ a[href^="tel"] {
     .padingImgeCol {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .img-fluid-company {
+        max-width: 570px;
+        overflow: hidden;
+        height: auto;
+        text-align: center;
+    }
+    .img-fluid-tower {
+        max-width: 565px;
+        overflow: hidden;
+        height: auto;
+        text-align: center;
     }
 }
 
@@ -514,11 +492,14 @@ a[href^="tel"] {
         white-space: wrap;
         text-overflow: ellipsis;
     }
+    .img-fluid-company {
+        max-width: 500px;
+    }
+    .img-fluid-tower {
+        max-width: 485px;
+    }
     .padingImgeColTower {
         padding-left: 0px;
-    }
-    .img-tab {
-        max-width: 490px;
     }
 }
 
@@ -614,6 +595,7 @@ a[href^="tel"] {
     }
     /* sizeimage */
     .img-fluid1 {
+        max-width: 350px;
         height: auto;
         object-fit: cover;
     }
@@ -628,13 +610,16 @@ a[href^="tel"] {
         padding-right: 0px;
         padding-left: 0px;
     }
+    .img-fluid-company {
+        max-width: 370px;
+        overflow: hidden;
+        height: auto;
+        text-align: center;
+    }
     .section-title {
-        padding-top: 10px;
+        padding-top: 50px;
         white-space: wrap;
         text-overflow: ellipsis;
-    }
-    .img-fluid-tower {
-        height: 100%;
     }
 }
 
@@ -752,12 +737,18 @@ a[href^="tel"] {
         padding-left: 0px;
     }
     .padingImgeColTower {
-        padding-right: 0px;
+        padding-right: 15px;
         padding-left: 0px;
     }
     .padingImgerowTower {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    .img-fluid-company {
+        max-width: 450px;
+        overflow: auto;
+        height: auto;
+        object-fit: cover;
     }
     .lgmd {
         padding-right: auto;
