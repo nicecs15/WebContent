@@ -85,7 +85,7 @@
 
             <div class="row flex-row ">
                 <div class="col-md-6 padingImgerowTower">
-                    <img src="img/RICCADO -5296--+++.jpg" class="img-fluid img-fluid1 img-tab img-fluid-company1 img-fluid-tower" alt="">
+                    <img src="img/RICCADO -5296--+++.jpg" class="img-fluid img-fluid1 img-tab img-fluid-company1" alt="">
                 </div>
 
                 <div class="col-md-6 pl-5 pr-5" style="background-color: gainsboro;  text-align: center;">
@@ -97,7 +97,7 @@
 
             <br>
 
-            <div id="pad-0d">
+            <div style="padding-left: 15px;">
                 <!-- /ส่วนกลางถึงส่วนล่าง -->
                 <div class="row">
                     <div class="col padingImgeCol" style="background-color: gainsboro;">
@@ -184,10 +184,10 @@
                                     <li data-target="#service_carousel" data-slide-to="4"></li>
                                 </ul>
                                 <!-- The slideshow -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner" style="width: 100%; height: 610px;">
                                     <div class="carousel-item active">
                                         <div class="hover-container" style="width: 100%; height: 100%;">
-                                            <img src="img/officecrop2.jpg" alt="Design Services" class="img-fluid">
+                                            <img src="img/officecrop.png" alt="Design Services" class="img-fluid">
                                             <div class="hover-header-container">
                                                 <div class="hover-header hover-fade-header FontGBookB">
                                                     OFFICE
@@ -197,8 +197,8 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="hover-container" style="width: 100%; height: 100%">
-                                            <img src="img/homecrop2.jpg" alt="HOME" class="img-fluid">
+                                        <div class="hover-container" style="width: 100%; height: 100">
+                                            <img src="img/homecrop.jpg" alt="HOME" class="img-fluid">
                                             <div class="hover-header-container">
                                                 <div class="hover-header hover-fade-header FontGBookB">
                                                     HOME
@@ -218,7 +218,7 @@
                                     </div>
                                     <div class="carousel-item">
                                         <div class="hover-container" style="width: 100%; height: 100%;">
-                                            <img src="img/kf5crop2.jpg" alt="KITCHEN" class="img-fluid">
+                                            <img src="img/kf5crop.jpg" alt="KITCHEN" class="img-fluid">
                                             <div class="hover-header-container">
                                                 <div class="hover-header hover-fade-header FontGBookB">
                                                     KITCHEN
@@ -228,7 +228,7 @@
                                     </div>
                                     <div class="carousel-item">
                                         <div class="hover-container" style="width: 100%; height: 100%;">
-                                            <img src="img/hfcrop2.jpg" alt="HARDWARE & FLOORING" class="img-fluid">
+                                            <img src="img/hfcrop.jpg" alt="HARDWARE & FLOORING" class="img-fluid">
                                             <div class="hover-header-container">
                                                 <div class="hover-header hover-fade-header FontGBookB">
                                                     HARDWARE & FLOORING
@@ -255,7 +255,7 @@
 
                 <div class="row">
                     <div class="col padingImgeCol " style="background-color: gainsboro; ">
-                        <div class="text-over-container">
+                        <div class="text-over-container ">
                             <br>
                             <div class="pl-5 pr-5">
                                 <h5>WHEN LIVING BECOMES OUR PRIDE</h5>

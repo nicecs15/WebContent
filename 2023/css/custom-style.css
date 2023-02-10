@@ -322,6 +322,9 @@ a[href^="tel"] {
 
 @media (min-width: 1025px) {
     /* desktop screen **/
+    .navphone {
+        display: none;
+    }
     #logoMobile {
         display: none;
     }
@@ -419,6 +422,13 @@ a[href^="tel"] {
     .padingImgeCol {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    #pad-0d {
+        padding-left: 15px;
+    }
+    .paddesk {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -557,6 +567,8 @@ a[href^="tel"] {
         /* 		height: 180px !important; */
         height: 60px !important;
         font-size: 13px;
+        position: absolute;
+        bottom: 0;
     }
     #ftPhoneNo {
         display: flex;
@@ -568,7 +580,7 @@ a[href^="tel"] {
     #ftMail {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -70px;
+        /* margin-left: -20px; */
     }
     #ftFacebook {
         display: flex;
@@ -586,7 +598,7 @@ a[href^="tel"] {
     #ftlogo {
         display: flex;
         white-space: nowrap !important;
-        margin-left: 10px;
+        margin-right: 60px;
     }
     #nav_e_cat_desk {
         display: inline;
@@ -705,7 +717,7 @@ a[href^="tel"] {
         margin-left: 12px;
     }
     #nav_e_cat_desk {
-        display: none;
+        display: contents;
     }
     .color-text-nav {
         color: blue !important;
@@ -763,5 +775,12 @@ a[href^="tel"] {
     .img-pad-0 {
         padding-right: 0px;
         padding-left: 0px;
+    }
+    #pad-0d {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .phonepad {
+        text-align: center;
     }
 }
