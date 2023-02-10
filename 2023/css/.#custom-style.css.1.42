@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 @font-face {
     font-family: GL;
-    src: url(../Fonts/Gotham-Light.otf);
+    src: url(Fonts/Gotham-Light.otf);
 }
 
 @font-face {
@@ -430,15 +430,6 @@ a[href^="tel"] {
         padding-left: 15px;
         padding-right: 15px;
     }
-    #our-p {
-        padding: 6rem 6rem;
-    }
-    .Repad {
-        padding: 0rem 3rem;
-    }
-    .Repad-2 {
-        padding: 0rem 110px;
-    }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -467,7 +458,6 @@ a[href^="tel"] {
         color: #ffffff !important;
         height: 50px;
         font-size: 16px;
-        bottom: 0px;
     }
     #ftPhoneNo {
         display: flex;
@@ -537,26 +527,6 @@ a[href^="tel"] {
     .img-tab {
         max-width: 490px;
     }
-    #our-p {
-        padding: 6rem 4rem;
-    }
-    .Repad {
-        padding: 0rem 2rem;
-    }
-    .cservice {
-        padding-left: 0px;
-    }
-    .img-kit {
-        max-width: 500px;
-        height: 100%;
-    }
-    .img-pad-0 {
-        padding-left: 0px;
-    }
-    .rowpad {
-        padding-right: 16px;
-        padding-left: 16px;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -597,7 +567,8 @@ a[href^="tel"] {
         /* 		height: 180px !important; */
         height: 60px !important;
         font-size: 13px;
-        bottom: 0px;
+        position: absolute;
+        bottom: 0;
     }
     #ftPhoneNo {
         display: flex;
@@ -674,18 +645,6 @@ a[href^="tel"] {
     .img-fluid-tower {
         height: 100%;
     }
-    #our-p {
-        padding: 4rem 1rem;
-    }
-    .Repad {
-        padding: 0rem 1.5rem;
-    }
-    .img-kit {
-        height: 100%;
-    }
-    .pad-fot {
-        position: fixed;
-    }
 }
 
 @media (max-width: 767px) {
@@ -724,7 +683,6 @@ a[href^="tel"] {
         background-color: #333333;
         color: #ffffff !important;
         height: 160px;
-        bottom: 0px;
     }
     #ftPhoneNo {
         display: flex;
@@ -824,11 +782,5 @@ a[href^="tel"] {
     }
     .phonepad {
         text-align: center;
-    }
-    #our-p {
-        padding: 1rem 1rem;
-    }
-    .Repad {
-        padding: 0rem 0.5rem;
     }
 }

@@ -76,9 +76,9 @@
                     <img src="img/tower2.png" class="img-fluid img-fluid1 img-tab img-fluid-company img-fluid-tower" alt="">
                 </div>
 
-                <div class="col-md-6 Repad" style="background-color: gainsboro;  text-align: center;">
+                <div class="col-md-6 pl-5 pr-5" style="background-color: gainsboro;  text-align: center;">
                     <h4 class="section-title link-text-blue-bold2 FontGBookB" style="font-size: 20px;">MODERNFORM GROUP <br>PUBLIC COMPANY LIMITED.</h4>
-                    <p class="FontGBook2" style="font-size: 16px;">
+                    <p class="FontGBook2 pl-5 pr-5" style="font-size: 16px;">
                         Established over 40 years ago, Modernform Group Public Company Limited has been the comprehensive furniture manufacturer and distributor, covering offine, home, kitchen furniture as well as the importer of furniture kits and home decors.</p>
                 </div>
             </div>
@@ -88,10 +88,10 @@
                     <img src="img/RICCADO -5296--+++.jpg" class="img-fluid img-fluid1 img-tab img-fluid-company1 img-fluid-tower" alt="">
                 </div>
 
-                <div class="col-md-6 Repad Repad-2" style="background-color: gainsboro;  text-align: center;">
+                <div class="col-md-6 pl-5 pr-5" style="background-color: gainsboro;  text-align: center;">
                     <p class="FontGBook2 section-title" style="font-size: 16px;">
-                        At Modernform, we believe that our mission is to develop the furniture which truly meets the modern lifestyle of the modern generation, to deliver full comfort and happiness through our specialized expertise, along with our always trending creation in
-                        the ever-changing world.</p>
+                        At Modernform, we believe that our <br> mission is to develop the furniture which <br> truly meets the modern lifestyle of the <br> modern generation, to deliver full comfort <br> and happiness through our specialized <br> expertise,
+                        along with our always trending <br> creation in the ever-changing world.</p>
                 </div>
             </div>
 
@@ -103,7 +103,7 @@
                     <div class="col padingImgeCol" style="background-color: gainsboro;">
                         <div class="text-over-container">
                             <br>
-                            <div class="Repad">
+                            <div class="pl-5 pr-5">
                                 <h5 class="FontGBookB">WHERE INNOVATION BECOMES LIVING</h5>
 
                                 <p class="FontGBook" style="font-size: 16px;">
@@ -257,7 +257,7 @@
                     <div class="col padingImgeCol " style="background-color: gainsboro; ">
                         <div class="text-over-container">
                             <br>
-                            <div class="Repad">
+                            <div class="pl-5 pr-5">
                                 <h5>WHEN LIVING BECOMES OUR PRIDE</h5>
 
                                 <p style="font-size: 16px; text-align: center;">Modernform is committed to creating furniture products that provide both comfort and happiness in living, which eventually <br> lead us to win an International Awards. Our continuous recognition from the global stages is
@@ -420,16 +420,16 @@
 
     <script>
         var forEach = function(t, o, r) {
-            if ("[object Object]" === Object.prototype.toString.call(t))
+            if ("[object Object] " === Object.prototype.toString.call(t))
                 for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
             else
                 for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
         };
-        var hamburgers = document.querySelectorAll(".hamburger");
+        var hamburgers = document.querySelectorAll(".hamburger ");
         if (hamburgers.length > 0) {
             forEach(hamburgers, function(hamburger) {
-                hamburger.addEventListener("click", function() {
-                    this.classList.toggle("is-active");
+                hamburger.addEventListener("click ", function() {
+                    this.classList.toggle("is-active ");
                 }, false);
             });
         }
@@ -437,27 +437,27 @@
         function collapsedBurger() {
             if ($('#myHamburger').is('.is-active')) {
                 $('.collapse').collapse('hide');
-                $("#myHamburger").removeClass('is-active');
-                $("#myHamburger").addClass('collapsed');
+                $("#myHamburger ").removeClass('is-active');
+                $("#myHamburger ").addClass('collapsed');
             }
         }
 
         $(document).ready(function() {
-            $("#service_carousel").on("touchstart", function(event) {
+            $("#service_carousel ").on("touchstart ", function(event) {
                 var xClick = event.originalEvent.touches[0].pageX;
 
-                $("#service_carousel").on("touchmove", function(event) {
+                $("#service_carousel ").on("touchmove ", function(event) {
                     var xMove = event.originalEvent.touches[0].pageX;
 
                     if (Math.floor(xClick - xMove) > 5) {
-                        $("#service_carousel").carousel('next');
+                        $("#service_carousel ").carousel('next');
                     } else if (Math.floor(xClick - xMove) < -5) {
-                        $("#service_carousel").carousel('prev');
+                        $("#service_carousel ").carousel('prev');
                     }
                 });
 
-                $("#service_carousel").on("touchend", function() {
-                    $("#service_carousel").off("touchmove");
+                $("#service_carousel ").on("touchend ", function() {
+                    $("#service_carousel ").off("touchmove ");
                 });
             });
 

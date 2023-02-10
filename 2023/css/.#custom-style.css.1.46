@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 @font-face {
     font-family: GL;
-    src: url(../Fonts/Gotham-Light.otf);
+    src: url(Fonts/Gotham-Light.otf);
 }
 
 @font-face {
@@ -433,12 +433,6 @@ a[href^="tel"] {
     #our-p {
         padding: 6rem 6rem;
     }
-    .Repad {
-        padding: 0rem 3rem;
-    }
-    .Repad-2 {
-        padding: 0rem 110px;
-    }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -540,22 +534,8 @@ a[href^="tel"] {
     #our-p {
         padding: 6rem 4rem;
     }
-    .Repad {
-        padding: 0rem 2rem;
-    }
-    .cservice {
-        padding-left: 0px;
-    }
     .img-kit {
-        max-width: 500px;
         height: 100%;
-    }
-    .img-pad-0 {
-        padding-left: 0px;
-    }
-    .rowpad {
-        padding-right: 16px;
-        padding-left: 16px;
     }
 }
 
@@ -597,7 +577,10 @@ a[href^="tel"] {
         /* 		height: 180px !important; */
         height: 60px !important;
         font-size: 13px;
-        bottom: 0px;
+        bottom: 0;
+    }
+    .lgmd {
+        position: static;
     }
     #ftPhoneNo {
         display: flex;
@@ -677,14 +660,8 @@ a[href^="tel"] {
     #our-p {
         padding: 4rem 1rem;
     }
-    .Repad {
-        padding: 0rem 1.5rem;
-    }
     .img-kit {
         height: 100%;
-    }
-    .pad-fot {
-        position: fixed;
     }
 }
 
@@ -827,8 +804,5 @@ a[href^="tel"] {
     }
     #our-p {
         padding: 1rem 1rem;
-    }
-    .Repad {
-        padding: 0rem 0.5rem;
     }
 }
