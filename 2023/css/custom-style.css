@@ -439,6 +439,12 @@ a[href^="tel"] {
     .Repad-2 {
         padding: 0rem 110px;
     }
+    .img-kit {
+        max-width: 550px;
+    }
+    .paddek {
+        padding-right: 10px;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -536,6 +542,7 @@ a[href^="tel"] {
     }
     .img-tab {
         max-width: 490px;
+        height: auto;
     }
     #our-p {
         padding: 6rem 4rem;
@@ -546,16 +553,16 @@ a[href^="tel"] {
     .cservice {
         padding-left: 0px;
     }
-    .img-kit {
-        max-width: 500px;
-        height: 100%;
-    }
     .img-pad-0 {
         padding-left: 0px;
     }
     .rowpad {
         padding-right: 16px;
         padding-left: 16px;
+    }
+    .img-fluid-company1 {
+        max-width: 500px;
+        max-height: 310px;
     }
 }
 
@@ -672,7 +679,7 @@ a[href^="tel"] {
         text-overflow: ellipsis;
     }
     .img-fluid-tower {
-        height: 100%;
+        height: 330px;
     }
     #our-p {
         padding: 4rem 1rem;
@@ -681,10 +688,13 @@ a[href^="tel"] {
         padding: 0rem 1.5rem;
     }
     .img-kit {
-        height: 100%;
+        height: 310px;
     }
     .pad-fot {
         position: fixed;
+    }
+    .img-fluid-company1 {
+        height: 250px;
     }
 }
 
