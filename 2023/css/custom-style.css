@@ -125,6 +125,59 @@ nav {
     color: #fff;
 }
 
+
+/************************************ zoom *********************************/
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    z-index: 10;
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.btn-13 {
+    /* background-color: white; */
+    border: none;
+    z-index: 1;
+}
+
+.btn-13:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51);
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.btn-13:hover {
+    color: #fff;
+}
+
+.btn-13:hover:after {
+    top: 0;
+    height: 100%;
+}
+
+.btn-13 div:hover {
+    padding: 0px;
+}
+
+
+/************************************ zoom *********************************/
+
 @media screen and (min-width: 600px) {
     .parent {
         flex-direction: row;
@@ -320,6 +373,50 @@ a[href^="tel"] {
     text-align: center;
 }
 
+.radio-btns {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.radio-btns:hover .radio-btns__btn:not(:hover) {
+    filter: grayscale(100%);
+    opacity: 0.75;
+}
+
+.radio-btns:hover .radio-btns__btn:not(:hover)::after {
+    background-color: rgba(#000, 0.5);
+}
+
+@media (min-width: 30rem) {
+    .radio-btns {
+        grid-template-columns: repeat(3, 150px);
+    }
+}
+
+.radio-btns__btn {
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.radio-btns__btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0);
+    transition: .3s;
+}
+
+.radio-btns__btn img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
 @media (min-width: 1025px) {
     /* desktop screen **/
     .navphone {
@@ -392,11 +489,11 @@ a[href^="tel"] {
     }
     /* ขนาดหน้าจอ web  pageindex */
     .section-title {
-        padding-top: 60px;
+        padding-top: 80px;
         padding-bottom: 10px;
     }
     .section-sub {
-        padding-top: 70px;
+        padding-top: 100px;
         padding-bottom: 10px;
     }
     .img-fluid-company1 {
@@ -431,7 +528,7 @@ a[href^="tel"] {
         padding-right: 15px;
     }
     #our-p {
-        padding: 6rem 6rem;
+        padding: 4rem 4rem;
     }
     .Repad {
         padding: 0rem 3rem;
@@ -444,6 +541,9 @@ a[href^="tel"] {
     }
     .paddek {
         padding-right: 10px;
+    }
+    .sub-or-index {
+        padding-top: 15%;
     }
 }
 
@@ -840,5 +940,8 @@ a[href^="tel"] {
     }
     .Repad {
         padding: 0rem 0.5rem;
+    }
+    .ftmb-pad {
+        padding-left: 10px;
     }
 }

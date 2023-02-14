@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Modernform International Division</title>
+
+    <!-- include -->
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!-- //////////////////////FOOTER////////////////////// -->
+    <div id="myFooter" class="row mt-6 d-flex justify-content-center lgmd1" onClick="collapsedBurger();">
+
+        <div id="ftcon">
+            <a id="ftMail" href="mailto:export@modernform.co.th" target="_blank" class="link-text-white col-md-3 FontGL align-items-center">
+                <img src="img/footer/path350.png" width="22" height="22" alt="">
+                <span class="ftmb-pad">&nbsp;export@modernform.co.th</span>
+            </a>
+        </div>
+
+        <a id="ftPhoneNo" href="tel:+66-2-094-9934 " target="_blank" class="link-text-white col-md-2 FontGL align-items-center">
+            <img src="img/footer/phone_icon.png" width="22" height="22" alt="">
+            <span class="ftmb-pad" style="margin-left: 5px; margin-top: 2px;">+66 2 094 9934</span>
+        </a>
+        <a id="ftFacebook" href="https://www.facebook.com/modernformcompany/" target="_blank" class="link-text-white  col-md-2  FontGL align-items-center">
+            <img src="img/footer/facebook_icon.png " width="22 " height="22 " alt=" ">
+            <span class="ftmb-pad">&nbsp;modernform furniture</span>
+        </a>
+
+        <a id="ftline" class="link-text-white FontGL align-items-center col-md-2 ">
+            <img src="img/footer/line_icon.png " width="22 " height="22 " alt=" ">
+            <span class="ftmb-pad">&nbsp;@modernform</span>
+        </a>
+
+        <a id="ftlogo" href="https://www.modernform.co.th/ " target="_blank " class="col-md-2">
+            <img src="img/footer/footermodernform.png " alt=" ">
+        </a>
+
+    </div>
+    <!-- /FOOTER -->
+
+    <script>
+        var forEach = function(t, o, r) {
+            if ("[object Object]" === Object.prototype.toString.call(t))
+                for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+            else
+                for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+        };
+        var hamburgers = document.querySelectorAll(".hamburger");
+        if (hamburgers.length > 0) {
+            forEach(hamburgers, function(hamburger) {
+                hamburger.addEventListener("click", function() {
+                    this.classList.toggle("is-active");
+                }, false);
+            });
+        }
+
+        function collapsedBurger() {
+            if ($('#myHamburger').is('.is-active')) {
+                $('.collapse').collapse('hide');
+                $("#myHamburger").removeClass('is-active');
+                $("#myHamburger").addClass('collapsed');
+            }
+        }
+
+        $(document).ready(function() {
+            $("#service_carousel").on("touchstart", function(event) {
+                var xClick = event.originalEvent.touches[0].pageX;
+
+                $("#service_carousel").on("touchmove", function(event) {
+                    var xMove = event.originalEvent.touches[0].pageX;
+
+                    if (Math.floor(xClick - xMove) > 5) {
+                        $("#service_carousel").carousel('next');
+                    } else if (Math.floor(xClick - xMove) < -5) {
+                        $("#service_carousel").carousel('prev');
+                    }
+                });
+
+                $("#service_carousel").on("touchend", function() {
+                    $("#service_carousel").off("touchmove");
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
