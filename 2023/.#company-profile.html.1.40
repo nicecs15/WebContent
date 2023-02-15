@@ -191,7 +191,7 @@
                                         <div class="hover-container" style="width: 100%; height: 100%;">
                                             <img src="img/officecrop2.jpg" alt="Design Services" class="img-fluid">
                                             <div class="hover-header-container">
-                                                <div class="hover-header hover-fade-header FontGM2">
+                                                <div class="hover-header hover-fade-header FontGBookB">
                                                     OFFICE
                                                 </div>
                                             </div>
@@ -202,7 +202,7 @@
                                         <div class="hover-container" style="width: 100%; height: 100%">
                                             <img src="img/homecrop2.jpg" alt="HOME" class="img-fluid">
                                             <div class="hover-header-container">
-                                                <div class="hover-header hover-fade-header FontGM2">
+                                                <div class="hover-header hover-fade-header FontGBookB">
                                                     HOME
                                                 </div>
                                             </div>
@@ -212,7 +212,7 @@
                                         <div class="hover-container" style="width: 100%; height: 100%;">
                                             <img src="img/walkincrop.jpg" alt="WALK-IN CLOSET" class="img-fluid">
                                             <div class="hover-header-container">
-                                                <div class="hover-header hover-fade-header FontGM2">
+                                                <div class="hover-header hover-fade-header FontGBookB">
                                                     WALK-IN CLOSET
                                                 </div>
                                             </div>
@@ -222,7 +222,7 @@
                                         <div class="hover-container" style="width: 100%; height: 100%;">
                                             <img src="img/kf5crop2.jpg" alt="KITCHEN" class="img-fluid">
                                             <div class="hover-header-container">
-                                                <div class="hover-header hover-fade-header FontGM2">
+                                                <div class="hover-header hover-fade-header FontGBookB">
                                                     KITCHEN
                                                 </div>
                                             </div>
@@ -232,7 +232,7 @@
                                         <div class="hover-container" style="width: 100%; height: 100%;">
                                             <img src="img/hfcrop2.jpg" alt="HARDWARE & FLOORING" class="img-fluid">
                                             <div class="hover-header-container">
-                                                <div class="hover-header hover-fade-header FontGM2">
+                                                <div class="hover-header hover-fade-header FontGBookB">
                                                     FITTING &<br> HARDWARE
                                                 </div>
                                             </div>

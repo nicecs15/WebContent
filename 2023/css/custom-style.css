@@ -227,6 +227,10 @@ a[href^="tel"] {
     font-weight: bold;
 }
 
+.link-text-blue {
+    color: rgb(42, 57, 135)!important;
+}
+
 .link-text-blue-bold {
     color: #1b1464 !important;
     font-weight: bold;
