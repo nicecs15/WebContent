@@ -74,7 +74,7 @@
 
             <div class="row pb-4 subtitle">
                 <div class="col">
-                    <span class="link-text-blue-bold2">OUR SERVICES</span>
+                    <span class="link-text-blue-bold2 FontGM">OUR SERVICES</span>
                     <hr class="hrline" id="myHr">
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="col-md-6 FontGBook" id="our-p" style="background-color: gainsboro;  text-align: center;">
-                    <h4 class="FontGM2 sub-or-index" style="font-size: 20px;">DESIGN SERVICE</h4>
+                    <h4 class="FontGM sub-or-index" style="font-size: 20px;">DESIGN SERVICE</h4>
                     <p style="font-size: 16px;">We recommend the most suitable furniture &nbsp; that meets our customer's needs and &nbsp; behaviors with the option to freely customize due to preferred style and budget.</p>
                 </div>
             </div>
@@ -97,16 +97,15 @@
                 </div>
 
                 <div class="col-md-6  paddingCol FontGBook" id="our-p" style="background-color: gainsboro;  text-align: center;">
-                    <h4 class="FontGM2 sub-or-index" style="font-size: 20px;">LOGISTIC SERVICE</h4>
+                    <h4 class="FontGM sub-or-index" style="font-size: 20px;">LOGISTIC SERVICE</h4>
                     <p style="font-size: 16px;">We provides a wide range of international transportation services and offer delivery <br> to any necessary incoterm.</p>
                 </div>
             </div>
 
             <br>
-
             <div class="row pb-4 subtitle">
                 <div class="col">
-                    <span class="link-text-blue-bold2">E-CATALOGUE</span>
+                    <span class="link-text-blue-bold2 FontGM">E-CATALOGUE</span>
                     <hr class="hrline" id="myHr">
                 </div>
             </div>
@@ -161,30 +160,29 @@
     <!-- //////////////////////FOOTER////////////////////// -->
     <!-- <div id="footerpage"></div> -->
 
-    <div id="myFooter" class="row mt-6 d-flex justify-content-center lgmd1 FontGBook" onClick="collapsedBurger();">
-
+    <div id="myFooter" class="row mt-6 d-flex justify-content-center lgmd1" onClick="collapsedBurger();">
         <div id="ftcon">
-            <a id="ftMail" href="mailto:export@modernform.co.th" target="_blank" class="link-text-white col-md-3  align-items-center">
+            <a id="ftMail" href="mailto:export@modernform.co.th" target="_blank" class="link-text-white col-md-3 FontGL align-items-center">
                 <img src="img/footer/path350.png" width="22" height="22" alt="">
-                <span class="ftmb-pad">&nbsp;export@modernform.co.th</span>
+                <span>&nbsp;export@modernform.co.th</span>
             </a>
         </div>
 
-        <a id="ftPhoneNo" href="tel:+66-2-094-9934 " target="_blank" class="link-text-white col-md-2  align-items-center">
+        <a id="ftPhoneNo" href="tel:+66-2-094-9934 " target="_blank" class="link-text-white col-md-2 FontGL align-items-center">
             <img src="img/footer/phone_icon.png" width="22" height="22" alt="">
-            <span class="ftmb-pad" style="margin-left: 5px; margin-top: 2px;">+66 2 094 9934</span>
+            <span style="margin-left: 5px; margin-top: 2px;">+66 2 094 9934</span>
         </a>
-        <a id="ftFacebook" href="https://www.facebook.com/modernformcompany/" target="_blank" class="link-text-white  col-md-2   align-items-center">
+        <a id="ftFacebook" href="https://www.facebook.com/modernformcompany/" target="_blank" class="link-text-white  col-md-2  FontGL align-items-center">
             <img src="img/footer/facebook_icon.png " width="22 " height="22 " alt=" ">
-            <span class="ftmb-pad">&nbsp;modernform furniture</span>
+            <span>&nbsp;modernform furniture</span>
         </a>
 
-        <a id="ftline" class="link-text-white  align-items-center col-md-2 ">
+        <a id="ftline" class="link-text-white FontGL align-items-center col-md-2 ">
             <img src="img/footer/line_icon.png " width="22 " height="22 " alt=" ">
-            <span class="ftmb-pad">&nbsp;@modernform</span>
+            <span>&nbsp;@modernform</span>
         </a>
 
-        <a id="ftlogo" href="https://www.modernform.co.th/ " target="_blank " class="col-md-2 ftipad ftmb-logo-pad">
+        <a id="ftlogo" href="https://www.modernform.co.th/ " target="_blank " class="col-md-2">
             <img src="img/footer/footermodernform.png " alt=" ">
         </a>
 
