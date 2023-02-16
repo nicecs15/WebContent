@@ -499,7 +499,7 @@ a[href^="tel"] {
     }
     /* ขนาดหน้าจอ web  pageindex */
     .section-title {
-        padding-top: 80px;
+        padding-top: 90px;
         padding-bottom: 10px;
     }
     .section-sub {
@@ -554,6 +554,9 @@ a[href^="tel"] {
     }
     .sub-or-index {
         padding-top: 15%;
+    }
+    .sub-or-index2 {
+        padding-top: 18%;
     }
     .img-ls {
         max-width: 570px;
@@ -645,12 +648,10 @@ a[href^="tel"] {
         padding-right: 0px;
         padding-left: 0px;
     }
-    .section-title {
-        padding-top: 50px;
-        white-space: wrap;
-        text-overflow: ellipsis;
-    }
     .padingImgeColTower {
+        padding-left: 0px;
+    }
+    .padingImgerowTower {
         padding-left: 0px;
     }
     .img-tab {
@@ -675,7 +676,10 @@ a[href^="tel"] {
     }
     .img-fluid-company1 {
         max-width: 500px;
-        max-height: 310px;
+        max-height: 320px;
+    }
+    .section-title {
+        padding-top: 60px;
     }
     .section-sub {
         padding-top: 80px;
@@ -683,11 +687,17 @@ a[href^="tel"] {
     }
     .img-ls {
         max-width: 470px;
-        height: 100%;
+        max-height: max-content;
     }
     .img-kit {
         width: 110%;
         height: 100%;
+    }
+    .sub-or-index {
+        padding-top: 10%;
+    }
+    .sub-or-index2 {
+        padding-top: 10%;
     }
 }
 
@@ -799,7 +809,7 @@ a[href^="tel"] {
         padding-left: 0px;
     }
     .section-title {
-        padding-top: 10px;
+        padding-top: 55px;
         white-space: wrap;
         text-overflow: ellipsis;
     }
@@ -827,6 +837,12 @@ a[href^="tel"] {
     }
     .ftipad {
         padding-left: 0px;
+    }
+    .sub-or-index {
+        padding-top: 3%;
+    }
+    .sub-or-index2 {
+        padding-top: 5%;
     }
 }
 
@@ -971,7 +987,7 @@ a[href^="tel"] {
         padding: 1rem 1rem;
     }
     .Repad {
-        padding: 0rem 0.5rem;
+        padding: 0rem 0.9rem;
     }
     .ftmb-pad {
         padding-left: 10px;
@@ -979,5 +995,8 @@ a[href^="tel"] {
     .ftmb-logo-pad {
         padding-bottom: 10px;
         padding-top: 5px;
+    }
+    .section-sub {
+        padding-top: 20px;
     }
 }

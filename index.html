@@ -10,278 +10,185 @@
     <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom-style.css">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="https://modernform.cdnboost.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://modernform.cdnboost.com/favicon-16x16.png">
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
+    <script>
+        $(function() {
+            $("#footerpage").load("footerpage.html");
+        });
+    </script>
+
 </head>
 
 <body>
-    <!-- //////////////////////HEADER////////////////////// -->
-    <div class="container text-center py-5" id="headerDesktop">
-        <div class="row">
-            <div class="col">
-                <a href="index.html">
-                    <img src="img/logo_modern.png" class="img-fluid max-width: 100%;" alt="">
-                </a>
+    <div>
+        <!-- //////////////////////HEADER////////////////////// -->
+        <div class="container text-center py-4" id="headerDesktop">
+            <div class="row">
+                <div class="col">
+                    <a href="index.html">
+                        <img src="img/logo_modern.png" class="img-fluid max-width: 100%;" style="height: 100px;" alt="">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <nav class="navbar navbar navbar-expand-lg mr-auto navbar-light" id="myNavbar">
-        <a href="index.html"><span id="logoMobile"><img src="img/logo_modern.png" width="170" height="49" alt=""></span></a>
+        <nav class="navbar navbar navbar-expand-lg mr-auto navbar-light" id="myNavbar">
+            <a href="index.html"><span id="logoMobile"><img src="img/logo_modern.png" width="230" height="50" alt=""></span></a>
 
-        <button id="myHamburger" class="hamburger hamburger--spring-r" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="myHamburger" class="hamburger hamburger--spring-r" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="hamburger-box">
 				<span class="hamburger-inner"></span>
 			</span>
 		</button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mx-auto fontGothamBold">
-                <li class="nav-item"><a class="nav-link color-text-nav" href="company-profile.html">COMPANY PROFILE</a></li>
-                <li class="nav-item" id="concat_li1"><a class="nav-link color-text-nav">|</a></li>
-                <li class="nav-item"><a class="nav-link color-text-nav" href="export-project-ref.html">GLOBAL PROJECT REFERENCE</a></li>
-                <li class="nav-item" id="concat_li2"><a class="nav-link color-text-nav">|</a></li>
-                <li class="nav-item"><a class="nav-link color-text-nav" href="contact-us.html">CONTACT US</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main role="main" onClick="collapsedBurger();">
-        <div class="text-center pt-4" id="myJumbotron">
-            <img src="img/banner_mid.png" class="img-fluid" alt="">
-        </div>
-        <div class="col p-4">
-            <hr id="myHr">
-        </div>
-    </main>
-    <!-- /HEADER -->
-
-    <!-- //////////////////////CONTENT////////////////////// -->
-    <div class="container p-2" style="width: 100%" id="myContent" onClick="collapsedBurger();">
-        <div class="row">
-            <div class="col text-center pb-5 fontGothamBold">
-                OUR SERVICE
+            <div class="collapse navbar-collapse FontGBookB" id="navbarsExampleDefault" style="font-weight: bold;">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link link-text-blue" href="index.html">HOME</a></li>
+                    <li class="nav-item" id="concat_li1"><a class="nav-link link-text-black">|</a></li>
+                    <li class="nav-item"><a class="nav-link link-text-black" href="company-profile.html">COMPANY PROFILE</a></li>
+                    <li class="nav-item" id="concat_li1"><a class="nav-link link-text-black">|</a></li>
+                    <li class="nav-item"><a class="nav-link link-text-black" href="export-project-ref.html">GLOBAL PROJECT REFERENCE</a></li>
+                    <li class="nav-item" id="concat_li2"><a class="nav-link link-text-black">|</a></li>
+                    <li class="nav-item"><a class="nav-link link-text-black" href="contact-us.html">CONTACT US</a></li>
+                </ul>
             </div>
-        </div>
-        <div id="service_1" class="row">
-            <div class="col-md-6">
-                <div class="shadow-sm bg-light p-3">
-                    <div class="hover-container">
-                        <img src="img/index/design_service.png" alt="Design Services" class="img-fluid">
-                        <div class="hover-header-container">
-                            <div class="hover-header hover-fade-header fontGothamBold">
-                                DESIGN SERVICE
-                            </div>
-                        </div>
-                        <div class="hover-text-container">
-                            <div class="hover-header fontGothamBold">
-                                DESIGN SERVICE
-                            </div>
-                            <div class="hover-text fontGotham">
-                                <div class="div-service-text">
-                                    Furniture Layout<br /> And Space Planning
-                                </div>
-                                <div class="div-service-text">
-                                    AutoCAD Design
-                                </div>
-                                <div class="div-service-text">
-                                    Product Customization
-                                </div>
-                                <div class="div-service-text last">
-                                    ODM And OEM
-                                </div>
-                            </div>
-                        </div>
+        </nav>
 
-                    </div>
+        <main role="main" onClick="collapsedBurger();">
+            <div class="text-center pt-4" id="myJumbotron">
+                <img src="img/banner-1.jpg" class="img-fluid " style="width :1125px;" alt="">
+            </div>
+        </main>
+
+        <!-- /HEADER -->
+
+        <!-- //////////////////////CONTENT////////////////////// -->
+        <br>
+        <!-- services index update -->
+        <div class="container p-2" style="width: 100%" id="myContent" onClick="collapsedBurger();">
+
+            <div class="row pb-4 subtitle">
+                <div class="col">
+                    <span class="link-text-blue">OUR SERVICES</span>
+                    <hr class="hrline" id="myHr">
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="shadow-sm bg-light p-3">
-                    <div class="hover-container">
-                        <img src="img/index/logistic_plus.png" alt="Logistic Plus" class="img-fluid">
-                        <div class="hover-header-container">
-                            <div class="hover-header hover-fade-header fontGothamBold">
-                                LOGISTIC PLUS
-                            </div>
-                        </div>
-                        <div class="hover-text-container">
-                            <div class="hover-header fontGothamBold">
-                                LOGISTIC PLUS
-                            </div>
-                            <div class="hover-text fontGotham">
-                                <div class="div-service-text">
-                                    CIF And Door To Door
-                                </div>
-                                <div class="div-service-text">
-                                    On Site Installation
-                                </div>
-                                <div class="div-service-text last">
-                                    3 Years Limited Warranty
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+            <div class="row flex-row rowpad paddek">
+                <div class="col-md-6 img-pad-0">
+                    <img src="img/kf-1 copy2.jpg" class="img-fluid img-fluid1 img-kit" alt="">
+                </div>
+
+                <div class="col-md-6 FontGBook" id="our-p" style="background-color: gainsboro;  text-align: center;">
+                    <h4 class="FontGM2 sub-or-index" style="font-size: 20px;">DESIGN SERVICE</h4>
+                    <p style="font-size: 16px;">We recommend the most suitable furniture &nbsp; that meets our customer's needs and &nbsp; behaviors with the option to freely customize due to preferred style and budget.</p>
                 </div>
             </div>
-        </div>
-        <div id="service_2" class="row">
-            <div class="col-md-12">
-                <div class="shadow-sm bg-light p-3">
-                    <div id="service_carousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#service_carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#service_carousel" data-slide-to="1"></li>
-                        </ul>
 
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="hover-container" style="width: 100%;">
-                                    <img src="img/index/design_service.png" alt="Design Services" class="img-fluid">
-                                    <div class="hover-header-container">
-                                        <div class="hover-header hover-fade-header fontGothamBold">
-                                            DESIGN SERVICE
-                                        </div>
-                                    </div>
-                                    <div class="hover-text-container">
-                                        <div class="hover-header fontGothamBold">
-                                            DESIGN SERVICE
-                                        </div>
-                                        <div class="hover-text fontGotham">
-                                            <div class="div-service-text">
-                                                Furniture Layout<br /> And Space Planning
-                                            </div>
-                                            <div class="div-service-text">
-                                                AutoCAD Design
-                                            </div>
-                                            <div class="div-service-text">
-                                                Product Customization
-                                            </div>
-                                            <div class="div-service-text last">
-                                                ODM And OEM
-                                            </div>
-                                        </div>
-                                    </div>
+            <div class="row flex-row-reverse rowpad">
+                <div class="col-md-6 cservice img-pad-0">
+                    <img src="img/jens-kreuter-ibb0u6k0pay-unsplash2.jpg" class="img-fluid img-fluid1 img-ls" alt="">
+                </div>
 
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="hover-container" style="width: 100%;">
-                                    <img src="img/index/logistic_plus.png" alt="Logistic Plus" class="img-fluid">
-                                    <div class="hover-header-container">
-                                        <div class="hover-header hover-fade-header fontGothamBold">
-                                            LOGISTIC PLUS
-                                        </div>
-                                    </div>
-                                    <div class="hover-text-container">
-                                        <div class="hover-header fontGothamBold">
-                                            LOGISTIC PLUS
-                                        </div>
-                                        <div class="hover-text fontGotham">
-                                            <div class="div-service-text">
-                                                CIF And Door To Door
-                                            </div>
-                                            <div class="div-service-text">
-                                                On Site Installation
-                                            </div>
-                                            <div class="div-service-text last">
-                                                3 Years Limited Warranty
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#service_carousel" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#service_carousel" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-
-                    </div>
+                <div class="col-md-6  paddingCol FontGBook" id="our-p" style="background-color: gainsboro;  text-align: center;">
+                    <h4 class="FontGM2 sub-or-index2" style="font-size: 20px;">LOGISTIC SERVICE</h4>
+                    <p style="font-size: 16px;">We provides a wide range of international transportation services and offer delivery <br> to any necessary incoterm.</p>
                 </div>
             </div>
-        </div>
 
-        <div class="row p-4" id="section_space">
-        </div>
+            <br>
 
-        <div class="row">
-            <div class="col text-center pb-5 fontGothamBold">
-                E-CATALOGUE
+            <div class="row pb-4 subtitle">
+                <div class="col">
+                    <span class="link-text-blue-bold2">E-CATALOGUE</span>
+                    <hr class="hrline" id="myHr">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="shadow-sm bg-light p-3">
+
+            <div class="row">
+                <div class="col-md-4 pt-3 zoom">
                     <div class="text-over-container">
                         <a href="e-cat-hf.html">
-                            <img src="img/index/home_furniture.png" class="img-fluid" alt="Home Furniture">
-                            <div class="text-over fontGothamBold">
-                                HOME<br />FURNITURE
-                            </div>
+                            <img src="img/home2.png" class="img-fluid" alt="home furniture">
                         </a>
                     </div>
+                    <br>
+                    <div>
+                        <h5 class="FontGM">HOME FURNITURE</h5>
+                        <p class="FontGBook" style="padding-top: 10px; font-size: 16px;">Everyone has a different definition of livings. Therefore, we are strongly committed to developing innovative home furniture to meet the variety of living styles, giving exceptional experiences for every family, and igniting inspiration.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="shadow-sm bg-light p-3">
+                <div class="col-md-4 pt-3 zoom">
                     <div class="text-over-container">
                         <a href="e-cat-of.html">
-                            <img src="img/index/ofiice_furniture.png" class="img-fluid" alt="Office Furniture">
-                            <div class="text-over fontGothamBold">
-                                OFFICE<br />FURNITURE
-                            </div>
+                            <img src="img/office2.png" class="img-fluid" alt="office furniture">
+
                         </a>
+                    </div>
+                    <br>
+                    <div>
+                        <h5 class="FontGM">OFFICE FURNITURE</h5>
+                        <p class="FontGBook" style="padding-top: 10px; font-size: 16px;">The excellent piece of work is the result&nbsp; of being in a good environment and a happy workplace. That’s why we are frmly committed to providing a wide range of innovative, quality ofce furniture in Thailand that meets every
+                            distinctive way of work.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="shadow-sm bg-light p-3">
+                <div class="col-md-4 pt-3 zoom">
                     <div class="text-over-container">
                         <a href="e-cat-kf.html">
-                            <img src="img/index/kitchen_furniture.png" class="img-fluid" alt="Kitchen Furniture">
-                            <div class="text-over fontGothamBold">
-                                KITCHEN<br />FURNITURE
-                            </div>
+                            <img src="img/kitchen.png" class="img-fluid" alt="kitchen furniture">
+
                         </a>
                     </div>
+                    <br>
+                    <h5 class="FontGM">KITCHEN FURNITURE</h5>
+                    <p class="FontGBook" style="padding-top: 10px; font-size: 16px;">The kitchen is the heart of the home, where family members meet and share the moments. Therefore, we immerse ourselves in developing various types of kitchen design to meet diferent cooking requirements, to ensure the tasteful meals
+                        and enjoyable moments for your family
+                    </p>
                 </div>
             </div>
         </div>
+
     </div>
+    <br><br>
     <!-- /CONTENT -->
-
     <!-- //////////////////////FOOTER////////////////////// -->
-    <div id="myFooter" class="row mt-5 d-flex justify-content-around" onClick="collapsedBurger();">
-        <a id="ftPhoneNo" href="tel:+66-2-094-9934 " target="_blank" class="link-text-white col-md fontGothamBold align-items-center">
+    <!-- <div id="footerpage"></div> -->
+
+    <div id="myFooter" class="row mt-6 d-flex justify-content-center lgmd1 FontGBook" onClick="collapsedBurger();">
+
+        <div id="ftcon">
+            <a id="ftMail" href="mailto:export@modernform.co.th" target="_blank" class="link-text-white col-md-3  align-items-center">
+                <img src="img/footer/path350.png" width="22" height="22" alt="">
+                <span class="ftmb-pad">&nbsp;export@modernform.co.th</span>
+            </a>
+        </div>
+
+        <a id="ftPhoneNo" href="tel:+66-2-094-9934 " target="_blank" class="link-text-white col-md-2  align-items-center">
             <img src="img/footer/phone_icon.png" width="22" height="22" alt="">
-            <span style="margin-left: 5px; margin-top: 2px;">+66 2 094 9934</span>
+            <span class="ftmb-pad" style="margin-left: 5px; margin-top: 2px;">+66 2 094 9934</span>
+        </a>
+        <a id="ftFacebook" href="https://www.facebook.com/modernformcompany/" target="_blank" class="link-text-white  col-md-2   align-items-center">
+            <img src="img/footer/facebook_icon.png " width="22 " height="22 " alt=" ">
+            <span class="ftmb-pad">&nbsp;modernform furniture</span>
         </a>
 
-        <a id="ftMail" href="mailto:export@modernform.co.th" target="_blank" class="link-text-white col-md fontGotham align-items-center">
-            <img src="img/footer/mail_icon.png" width="22" height="22" alt="">
-            <span>&nbsp;export@modernform.co.th</span>
+        <a id="ftline" class="link-text-white  align-items-center col-md-2 ">
+            <img src="img/footer/line_icon.png " width="22 " height="22 " alt=" ">
+            <span class="ftmb-pad">&nbsp;@modernform</span>
         </a>
 
-        <a id="ftFacebook" href="https://www.facebook.com/modernformcompany/" target="_blank" class="link-text-white col-md fontGotham align-items-center">
-            <img src="img/footer/facebook_icon.png" width="22" height="22" alt="">
-            <span>&nbsp;modernform furniture</span>
+        <a id="ftlogo" href="https://www.modernform.co.th/ " target="_blank " class="col-md-2 ftipad ftmb-logo-pad">
+            <img src="img/footer/footermodernform.png " alt=" ">
         </a>
 
-        <a id="ftWeb" href="https://www.modernform.co.th/" target="_blank" class="link-text-white col-md fontGotham align-items-center">
-            <img src="img/footer/web_icon.png" width="22" height="22" alt="">
-            <span>&nbsp;www.modernform.co.th</span>
-        </a>
     </div>
     <!-- /FOOTER -->
 

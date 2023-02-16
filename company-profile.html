@@ -10,139 +10,433 @@
     <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom-style.css">
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
-    <!-- //////////////////////HEADER////////////////////// -->
-    <div class="container text-center py-5" id="headerDesktop">
-        <div class="row">
-            <div class="col">
-                <a href="index.html">
-                    <img src="img/logo_modern.png" class="img-fluid max-width: 100%;" alt="">
-                </a>
+    <div>
+        <!-- //////////////////////HEADER////////////////////// -->
+        <div class="container text-center py-4" id="headerDesktop">
+            <div class="row">
+                <div class="col">
+                    <a href="index.html">
+                        <img src="img/logo_modern.png" class="img-fluid max-width: 100%;" style="height: 100px;" alt="">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <nav class="navbar navbar navbar-expand-lg mr-auto navbar-light" id="myNavbar">
-        <a href="index.html"><span id="logoMobile"><img src="img/logo_modern.png" width="170" height="49" alt=""></span></a>
+        <nav class="navbar navbar navbar-expand-lg mr-auto navbar-light" id="myNavbar">
+            <a href="index.html"><span id="logoMobile"><img src="img/logo_modern.png" width="230" height="50" alt=""></span></a>
 
-        <button id="myHamburger" class="hamburger hamburger--spring-r" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="myHamburger" class="hamburger hamburger--spring-r" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="hamburger-box">
 				<span class="hamburger-inner"></span>
 			</span>
 		</button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mx-auto fontGothamBold">
-                <li class="nav-item"><a class="nav-link color-text-nav" href="company-profile.html">COMPANY PROFILE</a></li>
-                <li class="nav-item" id="concat_li1"><a class="nav-link color-text-nav">|</a></li>
-                <li class="nav-item"><a class="nav-link color-text-nav" href="export-project-ref.html">GLOBAL PROJECT REFERENCE</a></li>
-                <li class="nav-item" id="concat_li2"><a class="nav-link color-text-nav">|</a></li>
-                <li class="nav-item"><a class="nav-link color-text-nav" href="contact-us.html">CONTACT US</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main role="main" onClick="collapsedBurger();">
-        <div class="text-center pt-4" id="myJumbotron">
-            <img src="img/banner_mid.png" class="img-fluid" alt="">
-        </div>
-        <div class="col p-4">
-            <hr id="myHr">
-        </div>
-    </main>
-    <!-- /HEADER -->
-
-    <!-- //////////////////////CONTENT////////////////////// -->
-    <div class="container pt-2 pb-4" style="width: 100%" id="myContent" onClick="collapsedBurger();">
-        <div class="row pb-3">
-            <div class="col">
-                <a href="index.html" class="link-text-black fontGotham">HOME</a>
-                <span class="fontGothamBold">&nbsp;/&nbsp;COMPANY PROFILE</span>
-            </div>
-        </div>
-        <div class="row pb-4">
-            <div class="col-lg-7 pb-4">
-                <img src="img/tower.png" class="img-fluid" alt="">
-            </div>
-            <div id="myContentDtl" class="col-lg-5">
-                <ul class="list-unstyled">
-                    <li class="media my-2">
-                        <div class="media-body fontGothamBold">Modernform Group Public Company Limited</div>
-                    </li>
-                    <li class="media my-4">
-                        <div class="media-body fontGotham">
-                            Is a manufacturer and distributor of office and residential furniture, kitchen furniture fittings and decorative items. In business for more than 37 years, the company has seen continuous growth and innovations.
-                        </div>
-                    </li>
-                    <li class="media my-4">
-                        <hr width="100%">
-                    </li>
-
-                    <a href="pdf.js/web/viewer.html?file=..%2F..%2Ffiles%2Fetc%2Fcompany_proflie.pdf" target="_blank" class="link-text-black">
-                        <li class="media my-4">
-                            <img src="img/download.png" class="mr-3 img-fluid" alt="">
-                            <div class="media-body fontGothamBold">DOWNLOAD</div>
-                        </li>
-                    </a>
+            <div class="collapse navbar-collapse FontGBookB" id="navbarsExampleDefault">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link link-text-black" href="index.html">HOME</a></li>
+                    <li class="nav-item" id="concat_li1"><a class="nav-link link-text-black">|</a></li>
+                    <li class="nav-item"><a class="nav-link link-text-blue" href="company-profile.html">COMPANY PROFILE</a></li>
+                    <li class="nav-item" id="concat_li1"><a class="nav-link link-text-black">|</a></li>
+                    <li class="nav-item"><a class="nav-link link-text-black" href="export-project-ref.html">GLOBAL PROJECT REFERENCE</a></li>
+                    <li class="nav-item" id="concat_li2"><a class="nav-link link-text-black">|</a></li>
+                    <li class="nav-item"><a class="nav-link link-text-black" href="contact-us.html">CONTACT US</a></li>
                 </ul>
             </div>
+        </nav>
+
+        <main role="main" onClick="collapsedBurger();">
+            <div class="text-center pt-4" id="myJumbotron">
+                <img src="img/banner-company-profile.jpg" class="img-fluid " style="width: 1125px;" alt="">
+            </div>
+        </main>
+
+        <!-- /HEADER -->
+
+        <!-- //////////////////////CONTENT////////////////////// -->
+        <br>
+        <!-- services index update -->
+        <div class="container p-2" style="width: 100%" id="myContent" onClick="collapsedBurger();">
+            <div class="row pb-4 subtitle">
+                <div class="col">
+                    <a href="index.html" class="link-text-black bold">HOME /</a>
+                    <span class="link-text-blue-bold2">COMPANY PROFILE</span>
+                    <hr class="hrline" id="myHr">
+                </div>
+            </div>
+
+            <div class="row flex-row-reverse ">
+                <div class="col-md-6 cservice padingImgeColTower ">
+                    <img src="img/tower2.png" class="img-fluid img-fluid1 img-tab img-fluid-company img-fluid-tower" alt="">
+                </div>
+
+                <div class="col-md-6 Repad" style="background-color: gainsboro;  text-align: center;">
+                    <h4 class="section-title link-text-blue FontGM" style="font-size: 20px;">MODERNFORM GROUP <br>PUBLIC COMPANY LIMITED.</h4>
+                    <p class="FontGBook" style="font-size: 16px;">
+                        Established over 40 years ago, Modernform Group Public Company Limited has been the comprehensive furniture manufacturer and distributor, covering offine, home, kitchen furniture as well as the importer of furniture kits and home decors.</p>
+                </div>
+            </div>
+
+            <div class="row flex-row ">
+                <div class="col-md-6 padingImgerowTower">
+                    <img src="img/riccado -52962.jpg" class="img-fluid img-fluid1  img-fluid-company1" alt="">
+                </div>
+
+                <div class="col-md-6 Repad Repad-2" style="background-color: gainsboro;  text-align: center;">
+                    <p class="FontGBook section-sub" style="font-size: 16px;">
+                        At Modernform, we believe that our mission is to develop the furniture which truly meets the modern lifestyle of the modern generation, to deliver full comfort and happiness through our specialized expertise, along with our always trending creation in
+                        the ever-changing world.</p>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="pad-0d">
+                <!-- /ส่วนกลางถึงส่วนล่าง -->
+                <div class="row">
+                    <div class="col padingImgeCol" style="background-color: gainsboro;">
+                        <div class="text-over-container">
+                            <br>
+                            <div class="Repad">
+                                <h5 class="FontGM2">WHERE INNOVATION BECOMES LIVING</h5>
+
+                                <p class="FontGBook" style="font-size: 16px;">
+                                    We are a leading provider of complete living furniture solutions, including home, office, and healthcare, along with non-furniture <br> solutions compromising fitting, architectural product, flooring, lift interior,
+                                    and facade decoration.
+                                </p>
+                            </div>
+                            <br>
+                            <div id="imgDel">
+                                <div id="imgDel" class="FontGM2 " style="display: flex; height: 100%; width: 100%;">
+
+                                    <div class="text-over-container" style="overflow: hidden; border-top-left-radius: 70px;">
+                                        <div class="linearG">
+                                            <img src="img/officecrop2.jpg" style=" max-height: 400px;">
+                                        </div>
+
+                                        <div class=" text-over" style="top: 370px; font-size: 14px;">
+                                            OFFICE
+                                        </div>
+                                    </div>
+
+                                    <div class="text-over-container " style="overflow: hidden; ">
+                                        <div class="linearG">
+                                            <img src="img/homecrop2.jpg" style=" max-height: 400px;">
+                                        </div>
+
+                                        <div class="text-over" style="top: 370px; font-size: 14px; ">
+                                            HOME
+                                        </div>
+                                    </div>
+
+                                    <div class="text-over-container " style="overflow: hidden; ">
+                                        <div class="linearG">
+                                            <img src="img/walkincrop.jpg" style="max-height: 400px;">
+                                        </div>
+
+                                        <div class="text-over" style="top: 360px; font-size: 14px; ">
+                                            WALK-IN <br>CLOSET
+                                        </div>
+                                    </div>
+
+                                    <div class="text-over-container " style="overflow: hidden; ">
+                                        <div class="linearG">
+                                            <img src="img/kf5crop2.jpg " style="max-height: 400px;">
+                                        </div>
+
+                                        <div class="text-over" style="top: 370px; font-size: 14px; ">
+                                            KITCHEN
+                                        </div>
+                                    </div>
+
+                                    <div class="text-over-container " style="overflow: hidden; border-top-right-radius: 70px;">
+                                        <div class="linearG">
+                                            <img src="img/hfcrop2.jpg " style=" max-height: 400px;">
+                                        </div>
+
+                                        <div class="text-over " style="top: 360px; font-size: 14px; ">
+                                            FITTING &<br> HARDWARE
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="service_2" class="col">
+                    <div class="col-md-1">
+                        <div class="shadow-sm bg-light p-2">
+                            <div id="service_carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#service_carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#service_carousel" data-slide-to="1"></li>
+                                    <li data-target="#service_carousel" data-slide-to="2"></li>
+                                    <li data-target="#service_carousel" data-slide-to="3"></li>
+                                    <li data-target="#service_carousel" data-slide-to="4"></li>
+                                </ul>
+                                <!-- The slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="hover-container" style="width: 100%; height: 100%;">
+                                            <img src="img/officecrop2.jpg" alt="design services" class="img-fluid">
+                                            <div class="hover-header-container">
+                                                <div class="hover-header hover-fade-header FontGM2">
+                                                    OFFICE
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="hover-container" style="width: 100%; height: 100%">
+                                            <img src="img/homecrop2.jpg" alt="home" class="img-fluid">
+                                            <div class="hover-header-container">
+                                                <div class="hover-header hover-fade-header FontGM2">
+                                                    HOME
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="hover-container" style="width: 100%; height: 100%;">
+                                            <img src="img/walkincrop.jpg" alt="walk-in closet" class="img-fluid">
+                                            <div class="hover-header-container">
+                                                <div class="hover-header hover-fade-header FontGM2">
+                                                    WALK-IN CLOSET
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="hover-container" style="width: 100%; height: 100%;">
+                                            <img src="img/kf5crop2.jpg" alt="kitchen" class="img-fluid">
+                                            <div class="hover-header-container">
+                                                <div class="hover-header hover-fade-header FontGM2">
+                                                    KITCHEN
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="hover-container" style="width: 100%; height: 100%;">
+                                            <img src="img/hfcrop2.jpg" alt="hardware & flooring" class="img-fluid">
+                                            <div class="hover-header-container">
+                                                <div class="hover-header hover-fade-header FontGM2">
+                                                    FITTING &<br> HARDWARE
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#service_carousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#service_carousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col padingImgeCol " style="background-color: gainsboro; ">
+                        <div class="text-over-container">
+                            <br>
+                            <div class="Repad">
+                                <h5 class="FontGM2">OUR PRIDE IN THE EYES OF THE WORLD</h5>
+
+                                <p class="FontGBook" style="font-size: 16px; text-align: center;">Modernform is committed to creating furniture products that provide both comfort and happiness in living, which eventually lead us to win an International Awards. Our continuous recognition from the global stages is
+                                    the proof of quality for our brand’s delicate design, functionality, and innovation that crafted for the new generation living.</p>
+                            </div>
+                            <div class="pr-3 pl-3">
+                                <img src="img/logo-1.png " class="img-fluid p-2" width="550px" alt=" ">
+                                <img src="img/logo-2.png " class="img-fluid p-2" width="550px" alt=" ">
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <!-- เว้นวรรค -->
+                <br>
+                <!-- เว้นวรรค -->
+
+                <div class="row fontSizeCompnanyProduct ">
+                    <div class="col-md-6 padingImgeCol " style="background-color: #333333; ">
+                        <div class="text-over-container ">
+                            <img src="img/export-website-1.jpg " class="img-fluid " alt="office furniture ">
+
+                        </div>
+                        <div class="pl-5 pr-5">
+                            <h6 class="FontGM2 mb-0" style="font-size: 14px; padding-top: 10px;">MOTION</h6>
+                            <p class="FontGBook" style="font-size: 14px;">
+                                Multifunctional seating for modern lifestyle was <br> designed and produced based on Concepts of <br> ‘Sustainable Design’ and ‘ Circular Economy’.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 padingImgeCol " style="background-color: #333333; ">
+                        <div class="text-over-container ">
+                            <img src="img/export-website-2.jpg " class="img-fluid " alt="office furniture ">
+                        </div>
+
+                        <div class="pl-5 pr-5">
+                            <h6 class="FontGM2 mb-0" style="font-size: 14px; padding-top: 10px;">CHAIN</h6>
+                            <p class="FontGBook" style="font-size: 14px;">
+                                The ‘sit-stand’ desk represents concept of chainlike <br> structure for maximum productivity obtained, focusing <br> on the users as center of activity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- เว้นวรรค -->
+                <br>
+                <!-- เว้นวรรค -->
+
+                <div class="row fontSizeCompnanyProduct ">
+                    <div class="col-md-6 padingImgeCol " style="background-color: #333333; ">
+                        <div class="text-over-container ">
+                            <img src="img/export-website-3.jpg " class="img-fluid " alt="office furniture ">
+
+                        </div>
+                        <div class="pl-5 pr-5">
+                            <h6 class="FontGM2 mb-0" style="font-size: 14px; padding-top: 10px;">MILLION</h6>
+                            <p class="FontGBook" style="font-size: 14px;">
+                                The minimalist working table gives a warm and relaxing <br> touch with its wooden material and attractive design.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 padingImgeCol " style="background-color: #333333; ">
+                        <div class="text-over-container ">
+                            <img src="img/export-website-4.jpg " class="img-fluid " alt="office furniture ">
+
+                        </div>
+                        <div class="pl-5 pr-5">
+                            <h6 class="FontGM2 mb-0" style="font-size: 14px; padding-top: 10px;">M.ANY</h6>
+                            <p class="FontGBook" style="font-size: 14px;">
+                                The tables thus fulfill ‘m.any’ functions and can be moved to any <br> space and for any occasion, both for personal and public use.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- เว้นวรรค -->
+                <br>
+                <!-- เว้นวรรค -->
+
+                <div class="row fontSizeCompnanyProduct ">
+                    <div class="col-md-6 padingImgeCol " style="background-color: #333333; ">
+                        <div class="text-over-container ">
+                            <img src="img/export-website-5.jpg " class="img-fluid " alt="office furniture ">
+
+                        </div>
+                        <div class="pl-5 pr-5">
+                            <h6 class="FontGM2 mb-0" style="font-size: 14px; padding-top: 10px;">MORE</h6>
+                            <p class="FontGBook" style="font-size: 14px;">
+                                Design with ‘Millennials in Mind’, representing <br> its unique lifestyle and behavior.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 padingImgeCol " style="background-color: #333333; ">
+                        <div class="text-over-container ">
+                            <img src="img/export-website-6.jpg " class="img-fluid " alt="office furniture ">
+
+                        </div>
+                        <div class="pl-5 pr-5">
+                            <h6 class="FontGM2 mb-0" style="font-size: 14px; padding-top: 10px;">W.HOLE</h6>
+                            <p class="FontGBook" style="font-size: 14px;">
+                                Multipurpose furniture are specifically designed to <br> connect people, digital devices, furniture and spaces.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- เว้นวรรค -->
+                <br>
+                <!-- เว้นวรรค -->
+
+                <div class="row fontSizeCompnanyProduct ">
+                    <div class="col-md-6 padingImgeCol " style="background-color: #333333; ">
+                        <div class="text-over-container ">
+                            <img src="img/export-website-7.jpg " class="img-fluid " alt="office furniture ">
+
+                        </div>
+                        <div class="pl-5 pr-5">
+                            <h6 class="FontGM2 mb-0" style="font-size: 14px; padding-top: 10px;">MATE</h6>
+                            <p class="FontGBook" style="font-size: 14px;">
+                                Acts as a companion who understands your needs and spends <br> time with you to make your daily life more comfortable.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 padingImgeCol " style="background-color: #333333; ">
+                        <div class="text-over-container ">
+                            <img src="img/export-website-8.jpg " class="img-fluid " alt="office furniture ">
+
+                        </div>
+                        <div class="pl-5 pr-5">
+                            <h6 class="FontGM2 mb-0" style="font-size: 14px; padding-top: 10px;">FABIAN &CO</h6>
+                            <p class="FontGBook" style="font-size: 14px;">
+                                Pared down from typical canteen chair but still complies to <br> ergonomic requirements that suit work & living activities.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+            <a href="pdf.js/web/viewer.html?file=..%2F..%2Ffiles%2Fetc%2Fcompany_proflie.pdf " target="_blank " class="link-text-black ">
+                <li class="media my-4 " style="text-align: center; padding-top: 30px; padding-bottom: 30px;">
+                    <div class="media-body FontGBook2">
+                        <img src="img/newdownload.png " class="img-fluid" alt=" "> download full company profile</div>
+                </li>
+            </a>
+
         </div>
     </div>
+
+
     <!-- /CONTENT -->
 
     <!-- //////////////////////FOOTER////////////////////// -->
-    <div id="myFooter" class="row mt-5 d-flex justify-content-around" onClick="collapsedBurger();">
-        <a id="ftPhoneNo" href="tel:+66-2-094-9934 " target="_blank" class="link-text-white col-md fontGothamBold align-items-center">
+    <div id="myFooter" class="row mt-6 d-flex justify-content-center lgmd1 FontGBook" onClick="collapsedBurger();">
+
+        <div id="ftcon">
+            <a id="ftMail" href="mailto:export@modernform.co.th" target="_blank" class="link-text-white col-md-3  align-items-center">
+                <img src="img/footer/path350.png" width="22" height="22" alt="">
+                <span class="ftmb-pad">&nbsp;export@modernform.co.th</span>
+            </a>
+        </div>
+
+        <a id="ftPhoneNo" href="tel:+66-2-094-9934 " target="_blank" class="link-text-white col-md-2  align-items-center">
             <img src="img/footer/phone_icon.png" width="22" height="22" alt="">
-            <span style="margin-left: 5px;">+66 2 094 9934</span>
+            <span class="ftmb-pad" style="margin-left: 5px; margin-top: 2px;">+66 2 094 9934</span>
+        </a>
+        <a id="ftFacebook" href="https://www.facebook.com/modernformcompany/" target="_blank" class="link-text-white  col-md-2   align-items-center">
+            <img src="img/footer/facebook_icon.png " width="22 " height="22 " alt=" ">
+            <span class="ftmb-pad">&nbsp;modernform furniture</span>
         </a>
 
-        <a id="ftMail" href="mailto:export@modernform.co.th" target="_blank" class="link-text-white col-md fontGotham align-items-center">
-            <img src="img/footer/mail_icon.png" width="22" height="22" alt="">
-            <span>&nbsp;export@modernform.co.th</span>
+        <a id="ftline" class="link-text-white  align-items-center col-md-2 ">
+            <img src="img/footer/line_icon.png " width="22 " height="22 " alt=" ">
+            <span class="ftmb-pad">&nbsp;@modernform</span>
         </a>
 
-        <a id="ftFacebook" href="https://www.facebook.com/modernformcompany/" target="_blank" class="link-text-white col-md fontGotham align-items-center">
-            <img src="img/footer/facebook_icon.png" width="22" height="22" alt="">
-            <span>&nbsp;modernform furniture</span>
+        <a id="ftlogo" href="https://www.modernform.co.th/ " target="_blank " class="col-md-2 ftipad ftmb-logo-pad">
+            <img src="img/footer/footermodernform.png " alt=" ">
         </a>
 
-        <a id="ftWeb" href="https://www.modernform.co.th/" target="_blank" class="link-text-white col-md fontGotham align-items-center">
-            <img src="img/footer/web_icon.png" width="22" height="22" alt="">
-            <span>&nbsp;www.modernform.co.th</span>
-        </a>
-
-
-        <!-- 		<div id="ftPhoneNo" class="col-md ml-3 fontGothamBold"> -->
-        <!-- 			<a href="tel:+66-2-094-9934 " target="_blank" class="link-text-white"> -->
-        <!-- 				<img src="img/footer/phone_icon.png" width="22" height="22" alt=""> -->
-        <!-- 				<span class="myNowrap" style="margin-left: 1px;">+66 2 094 9934</span> -->
-        <!-- 			</a> -->
-        <!-- 		</div> -->
-        <!-- 		<div class="col-md ml-3 fontGotham"> -->
-        <!-- 			<a href="mailto:export@modernform.co.th" target="_blank" class="link-text-white"> -->
-        <!-- 				<img src="img/footer/mail_icon.png" width="22" height="22" alt=""> -->
-        <!-- 				<span class="myNowrap">&nbsp;export@modernform.co.th</span> -->
-        <!-- 			</a> -->
-        <!-- 		</div> -->
-        <!-- 		<div class="col-md ml-3 fontGotham"> -->
-        <!-- 			<a href="https://www.facebook.com/modernformcompany/" target="_blank" class="link-text-white"> -->
-        <!-- 				<img src="img/footer/facebook_icon.png" width="22" height="22" alt=""> -->
-        <!-- 				<span class="myNowrap">&nbsp;modernform furniture</span> -->
-        <!-- 			</a> -->
-        <!-- 		</div> -->
-        <!-- 		<div class="col-md ml-3 fontGotham"> -->
-        <!-- 			<a href="https://www.modernform.co.th/" target="_blank" class="link-text-white"> -->
-        <!-- 				<img src="img/footer/web_icon.png" width="22" height="22" alt=""> -->
-        <!-- 				<span class="myNowrap">&nbsp;www.modernform.co.th</span> -->
-        <!-- 			</a> -->
-        <!-- 		</div> -->
     </div>
+
+
     <!-- /FOOTER -->
 
     <script>
@@ -168,6 +462,27 @@
                 $("#myHamburger").addClass('collapsed');
             }
         }
+
+        $(document).ready(function() {
+            $("#service_carousel").on("touchstart", function(event) {
+                var xClick = event.originalEvent.touches[0].pageX;
+
+                $("#service_carousel").on("touchmove", function(event) {
+                    var xMove = event.originalEvent.touches[0].pageX;
+
+                    if (Math.floor(xClick - xMove) > 5) {
+                        $("#service_carousel").carousel('next');
+                    } else if (Math.floor(xClick - xMove) < -5) {
+                        $("#service_carousel").carousel('prev');
+                    }
+                });
+
+                $("#service_carousel").on("touchend", function() {
+                    $("#service_carousel").off("touchmove");
+                });
+            });
+
+        });
     </script>
 </body>
 

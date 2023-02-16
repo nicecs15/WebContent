@@ -1,36 +1,70 @@
 @CHARSET "UTF-8";
 @font-face {
-    font-family: 'gotham_bold_2';
-    src: url('../font/gotham_bold_2.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    font-family: GL;
+    src: url(/fonts/gotham-light.otf);
 }
 
 @font-face {
-    font-family: 'gotham_book';
-    src: url('../font/gotham_book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: GB;
+    src: url(/fonts/gotham-bold.otf);
 }
 
 @font-face {
-    font-family: 'myriadpro_regular';
-    src: url('../font/myriadpro_regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: GBook;
+    src: url(/fonts/gotham-book.otf);
 }
 
-.fontGothamBold {
-    font-family: gotham_bold_2 !important;
+@font-face {
+    font-family: GM;
+    src: url(/fonts/gotham-medium.otf);
+}
+
+.FontGL {
+    font-family: GL;
+}
+
+.FontGLB {
+    font-family: GL;
     font-weight: bold;
 }
 
-.fontGotham {
-    font-family: gotham_book !important;
+.FontGBook {
+    font-family: GBook;
 }
 
-.fontMyriadpro {
-    font-family: myriadpro_regular !important;
+.FontGBook2 {
+    font-family: GBook;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+
+.FontGBookB {
+    font-family: GBook;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.FontGB {
+    font-family: GB;
+    font-weight: bold;
+}
+
+.FontGM {
+    font-family: GM;
+}
+
+.FontGM2 {
+    font-family: GM;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.subtitle {
+    font-family: GBook;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: larger;
 }
 
 html,
@@ -40,13 +74,13 @@ body {
     /* 	margin: 0px; */
     /* 	padding: 0px; */
     width: 100% !important;
-    min-width: 0 !important;
+    min-width: none !important;
     max-width: none !important;
     overflow-x: hidden;
 }
 
 body {
-    background-image: url('../img/background.png');
+    background-color: #F1F1F1;
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
@@ -55,8 +89,113 @@ body {
     /* 	background-image: linear-gradient(to bottom right, #808080, #ffffff 45%, #c5c5c5 98%); */
 }
 
+.hrline {
+    height: 0.1px;
+    border-width: 0;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0px;
+}
+
+.submit {
+    background: rgb(42, 57, 135);
+    color: white;
+    font-size: medium;
+    border-radius: 20px;
+    padding: 2px 20px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
 nav {
     width: 100%;
+}
+
+.parent {
+    display: flex;
+    font-family: arial, sans-serif;
+    flex-direction: column-reverse;
+}
+
+.item {
+    width: auto;
+    min-height: 200px;
+    padding: 2em;
+    color: #ffffff;
+    background: #eeeeee;
+}
+
+.last {
+    background: #222;
+    color: #fff;
+}
+
+
+/************************************ zoom *********************************/
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    z-index: 10;
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.btn-13 {
+    background-color: #0000000d;
+    border: none;
+    z-index: 1;
+}
+
+.btn-13:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    /*background-color: rgb(51, 51, 51);
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;*/
+    transition: all 0.3s ease;
+}
+
+.btn-13:hover {
+    /*color: #fff;*/
+}
+
+.btn-13:hover:after {
+    top: 0;
+    height: 100%;
+}
+
+.btn-13 div:hover {
+    padding: 0px;
+}
+
+
+/************************************ zoom *********************************/
+
+@media screen and (min-width: 600px) {
+    .parent {
+        flex-direction: row;
+    }
+    .item {
+        width: 50%;
+        min-height: 500px;
+    }
+    .last {
+        color: #222;
+        background: #ccc;
+    }
 }
 
 a[href^="tel"] {
@@ -77,6 +216,29 @@ a[href^="tel"] {
 
 .link-text-black {
     color: #000000 !important;
+}
+
+.link-text-black-bold {
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.link-text-blue {
+    color: rgb(42, 57, 135)!important;
+}
+
+.link-text-blue-bold {
+    color: #1b1464 !important;
+    font-weight: bold;
+}
+
+.link-text-blue-bold2 {
+    color: rgb(42, 57, 135)!important;
+    font-weight: bold;
 }
 
 .link-text-black:hover {
@@ -128,6 +290,22 @@ a[href^="tel"] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.endtitle::after {
+    content: "";
+    background-color: rgb(51, 51, 51);
+}
+
+.linearG::after {
+    content: "";
+    background: linear-gradient( rgba(51, 51, 51, 0) 0%, rgb(51, 51, 51) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -5px;
 }
 
 .hover-container {
@@ -200,13 +378,65 @@ a[href^="tel"] {
     display: none !important;
 }
 
+.fontSizeCompnanyProduct {
+    color: #ffffff !important;
+    text-align: center;
+}
+
+.radio-btns {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.radio-btns:hover .radio-btns__btn:not(:hover) {
+    filter: grayscale(100%);
+    opacity: 0.75;
+}
+
+.radio-btns:hover .radio-btns__btn:not(:hover)::after {
+    background-color: rgba(#000, 0.5);
+}
+
+@media (min-width: 30rem) {
+    .radio-btns {
+        grid-template-columns: repeat(3, 150px);
+    }
+}
+
+.radio-btns__btn {
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.radio-btns__btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0);
+    transition: .3s;
+}
+
+.radio-btns__btn img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
 @media (min-width: 1025px) {
-    /* desktop screen */
+    /* desktop screen **/
+    .navphone {
+        display: none;
+    }
     #logoMobile {
         display: none;
     }
     #myHr {
-        width: 85%;
+        width: 100%;
     }
     #space_solu_dl {
         white-space: nowrap;
@@ -222,7 +452,7 @@ a[href^="tel"] {
     }
     #myFooter {
         align-items: center;
-        background-color: #1b1464;
+        background-color: #333333;
         color: #ffffff !important;
         height: 50px;
         font-size: 18px;
@@ -231,24 +461,35 @@ a[href^="tel"] {
         display: flex;
         justify-content: center;
         white-space: nowrap !important;
+        padding: 0px;
+        margin-left: 0px;
         /*     	margin-top: -1px; */
         /*     	margin-left: 30px; */
     }
     #ftMail {
         display: flex;
         white-space: nowrap !important;
-        justify-content: center;
+        padding-left: 0px;
+        margin-left: 0px;
         /*     	margin-left: -80px; */
     }
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
-        margin-left: 80px;
+        padding: 0px 0px;
+        margin-right: 10px;
     }
-    #ftWeb {
+    #ftline {
         display: flex;
         white-space: nowrap !important;
+        padding: 0px 0px;
+        margin-left: 0px;
         /*     	margin-left: -30px; */
+    }
+    #ftlogo {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: 20px;
     }
     #myHamburger {
         display: none;
@@ -256,15 +497,79 @@ a[href^="tel"] {
     #nav_e_cat_desk {
         display: inline;
     }
+    /* ขนาดหน้าจอ web  pageindex */
+    .section-title {
+        padding-top: 90px;
+        padding-bottom: 10px;
+    }
+    .section-sub {
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+    .img-fluid-company1 {
+        max-width: 580px;
+        height: 100%;
+    }
+    .img-fluid-company {
+        max-width: 580px;
+        height: 100%;
+    }
+    .row.flex-row-reverse {
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    .cservice {
+        padding: 0px 15px 0px 0px
+    }
+    /* ขนาดหน้าจอ web  สินค้า pagecompany */
+    .padingrow {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .padingImgeCol {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    #pad-0d {
+        padding-left: 15px;
+    }
+    .paddesk {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #our-p {
+        padding: 4rem 4rem;
+    }
+    .Repad {
+        padding: 0rem 3rem;
+    }
+    .Repad-2 {
+        padding: 0rem 110px;
+    }
+    .img-kit {
+        max-width: 560px;
+    }
+    .paddek {
+        padding-right: 10px;
+    }
+    .sub-or-index {
+        padding-top: 15%;
+    }
+    .sub-or-index2 {
+        padding-top: 18%;
+    }
+    .img-ls {
+        max-width: 570px;
+    }
 }
 
-@media (min-width: 993px) and (max-width: 1024px) {
+@media (min-width: 993px) and (max-width: 1200px) {
     /*tablet landscape screen */
     #logoMobile {
         display: none;
     }
     #myHr {
-        width: 85%;
+        width: 100%;
     }
     #space_solu_dl {
         white-space: nowrap;
@@ -280,32 +585,42 @@ a[href^="tel"] {
     }
     #myFooter {
         align-items: center;
-        background-color: #1b1464;
+        background-color: #333333;
         color: #ffffff !important;
         height: 50px;
         font-size: 16px;
+        bottom: 0px;
     }
     #ftPhoneNo {
         display: flex;
         /*     	justify-content: center; */
         white-space: nowrap !important;
         /*     	margin-top: 2px; */
-        margin-left: 30px;
+        margin-left: 0px;
+        padding: 0px 5px;
     }
     #ftMail {
         display: flex;
         white-space: nowrap !important;
         margin-left: -80px;
+        padding: 0px 5px;
     }
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
         /*     	margin-left: -10px; */
+        margin-left: -30px;
+        padding: 0px 5px;
     }
-    #ftWeb {
+    #ftline {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -30px;
+        margin-left: -0px;
+    }
+    #ftlogo {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: 20px;
     }
     #myHamburger {
         display: none;
@@ -315,7 +630,6 @@ a[href^="tel"] {
     }
     .hover-header {
         font-size: 1em;
-
     }
     .hover-text-container {
         opacity: 1;
@@ -325,6 +639,65 @@ a[href^="tel"] {
     }
     .text-over {
         font-size: 0.9em;
+    }
+    .padingrow {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .padingImgeCol {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .padingImgeColTower {
+        padding-left: 0px;
+    }
+    .padingImgerowTower {
+        padding-left: 0px;
+    }
+    .img-tab {
+        max-width: 490px;
+        height: auto;
+    }
+    #our-p {
+        padding: 6rem 4rem;
+    }
+    .Repad {
+        padding: 0rem 2rem;
+    }
+    .cservice {
+        padding-left: 0px;
+    }
+    .img-pad-0 {
+        padding-left: 0px;
+    }
+    .rowpad {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .img-fluid-company1 {
+        max-width: 500px;
+        max-height: 320px;
+    }
+    .section-title {
+        padding-top: 60px;
+    }
+    .section-sub {
+        padding-top: 80px;
+        padding-bottom: 10px;
+    }
+    .img-ls {
+        max-width: 470px;
+        max-height: max-content;
+    }
+    .img-kit {
+        width: 110%;
+        height: 100%;
+    }
+    .sub-or-index {
+        padding-top: 10%;
+    }
+    .sub-or-index2 {
+        padding-top: 10%;
     }
 }
 
@@ -340,9 +713,9 @@ a[href^="tel"] {
         display: none;
     }
     #myNavbar {
-        background-color: rgba(0, 0, 0, 0.7);
-        /*     	position: absolute; */
+        background-color: rgb(241, 241, 241);
         text-align: center;
+        box-shadow: inset 0px 0px 60px 10px rgb(190, 190, 190);
         font-size: 22px;
     }
     #myJumbotron {
@@ -361,39 +734,48 @@ a[href^="tel"] {
     }
     #myFooter {
         align-items: center;
-        background-color: #1b1464;
+        background-color: #333333;
         color: #ffffff !important;
         /* 		height: 180px !important; */
         height: 60px !important;
         font-size: 13px;
+        bottom: 0px;
     }
     #ftPhoneNo {
         display: flex;
         /*     	justify-content: center; */
         white-space: nowrap !important;
         /*     	margin-top: 2px; */
-        margin-left: 10px;
+        margin-left: -25px;
     }
     #ftMail {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -70px;
+        /* margin-left: -20px; */
     }
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
+        margin-left: 5px;
+        padding: 0px 5px;
         /*     	margin-left: -10px; */
     }
-    #ftWeb {
+    #ftline {
         display: flex;
         white-space: nowrap !important;
-        margin-left: -30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #ftlogo {
+        display: flex;
+        white-space: nowrap !important;
+        margin-right: 40px;
     }
     #nav_e_cat_desk {
         display: inline;
     }
     .color-text-nav {
-        color: #ffffff !important;
+        color: #1b1464;
     }
     .hover-header {
         font-size: 1em;
@@ -410,10 +792,68 @@ a[href^="tel"] {
     .hover-header {
         padding-top: 0.68em;
     }
+    /* sizeimage */
+    .img-fluid1 {
+        height: auto;
+        object-fit: cover;
+    }
+    .col-md-6 {
+        padding: 0px 0px 0px 0px;
+    }
+    .padingrow {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .padingImgeCol {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .section-title {
+        padding-top: 55px;
+        white-space: wrap;
+        text-overflow: ellipsis;
+    }
+    .img-fluid-tower {
+        height: 330px;
+    }
+    #our-p {
+        padding: 4rem 1rem;
+    }
+    .Repad {
+        padding: 0rem 1.5rem;
+    }
+    .img-kit {
+        height: 310px;
+    }
+    .pad-fot {
+        position: fixed;
+    }
+    .img-fluid-company1 {
+        height: 250px;
+    }
+    .section-sub {
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    .ftipad {
+        padding-left: 0px;
+    }
+    .sub-or-index {
+        padding-top: 3%;
+    }
+    .sub-or-index2 {
+        padding-top: 5%;
+    }
 }
 
 @media (max-width: 767px) {
     /*mobile portrait and landscape screen*/
+    #myHr {
+        width: 100%;
+    }
+    #imgDel {
+        display: none;
+    }
     #headerDesktop {
         display: none;
     }
@@ -424,9 +864,10 @@ a[href^="tel"] {
         display: none;
     }
     #myNavbar {
-        background-color: rgba(0, 0, 0, 0.7);
-        /*     	position: absolute; */
+        background-color: rgb(241, 241, 241);
         text-align: center;
+        box-shadow: inset 0px 0px 60px 10px rgb(190, 190, 190);
+        /*     	position: absolute; */
     }
     #myJumbotron {
         /*     	padding-top: 76px !important; */
@@ -441,9 +882,10 @@ a[href^="tel"] {
     }
     #myFooter {
         align-items: center;
-        background-color: #1b1464;
+        background-color: #333333;
         color: #ffffff !important;
         height: 160px;
+        bottom: 0px;
     }
     #ftPhoneNo {
         display: flex;
@@ -455,23 +897,33 @@ a[href^="tel"] {
     #ftMail {
         display: flex;
         white-space: nowrap !important;
-        margin-left: 12px;
+        margin-left: 10px;
+        padding: 0px;
+    }
+    #ftcon {
+        margin-left: 1rem;
+        flex-grow: 3;
     }
     #ftFacebook {
         display: flex;
         white-space: nowrap !important;
         margin-left: 12px;
     }
-    #ftWeb {
+    #ftline {
+        display: flex;
+        white-space: nowrap !important;
+        margin-left: 12px;
+    }
+    #ftlogo {
         display: flex;
         white-space: nowrap !important;
         margin-left: 12px;
     }
     #nav_e_cat_desk {
-        display: none;
+        display: contents;
     }
     .color-text-nav {
-        color: #ffffff !important;
+        color: blue !important;
     }
     .hover-text-container {
         opacity: 1;
@@ -494,5 +946,60 @@ a[href^="tel"] {
     }
     #service_2 {
         display: flex !important;
+    }
+    /* ขนาดหน้าจอ padding pageindex services*/
+    .section-title {
+        padding-top: 20px;
+    }
+    .phonespace {
+        padding-top: 20px;
+    }
+    /* ขนาดหน้าจอ มือถือ pagecompany สินค้า */
+    .padingrow {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .padingImgeCol {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .padingImgeColTower {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .padingImgerowTower {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .lgmd {
+        padding-right: auto;
+        margin-bottom: 10px;
+    }
+    .img-pad-0 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    #pad-0d {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .phonepad {
+        text-align: center;
+    }
+    #our-p {
+        padding: 1rem 1rem;
+    }
+    .Repad {
+        padding: 0rem 0.9rem;
+    }
+    .ftmb-pad {
+        padding-left: 10px;
+    }
+    .ftmb-logo-pad {
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+    .section-sub {
+        padding-top: 20px;
     }
 }

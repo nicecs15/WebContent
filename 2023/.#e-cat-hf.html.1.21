@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Modernform International Division</title>
+
+    <!-- include -->
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <!-- //////////////////////HEADER////////////////////// -->
+        <div class="container text-center py-4" id="headerDesktop">
+            <div class="row">
+                <div class="col">
+                    <a href="index.html">
+                        <img src="img/logo_modern.png" class="img-fluid max-width: 100%;" style="height: 100px;" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar navbar-expand-lg mr-auto navbar-light" id="myNavbar">
+            <a href="index.html"><span id="logoMobile"><img src="img/logo_modern.png" width="230" height="50" alt=""></span></a>
+
+            <button id="myHamburger" class="hamburger hamburger--spring-r" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+
+            <div class="collapse navbar-collapse FontGBookB" id="navbarsExampleDefault" style="font-weight: bold;">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item"><a class="nav-link link-text-black" href="index.html">HOME</a></li>
+                    <li class="nav-item" id="concat_li1"><a class="nav-link link-text-black">|</a></li>
+                    <li class="nav-item"><a class="nav-link link-text-black" href="company-profile.html">COMPANY PROFILE</a></li>
+                    <li class="nav-item" id="concat_li1"><a class="nav-link link-text-black">|</a></li>
+                    <li class="nav-item"><a class="nav-link link-text-black" href="export-project-ref.html">GLOBAL PROJECT REFERENCE</a></li>
+                    <li class="nav-item" id="concat_li2"><a class="nav-link link-text-black">|</a></li>
+                    <li class="nav-item"><a class="nav-link link-text-black" href="contact-us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" onClick="collapsedBurger();">
+            <div class="text-center pt-4" id="myJumbotron">
+                <img src="img/banner.png" class="img-fluid" style="width: 1125px;" alt="">
+            </div>
+        </main>
+
+        <!-- /HEADER -->
+
+        <!--เว้นพื้นที่-->
+        <br>
+        <!--เว้นพื้นที่-->
+        <!-- //////////////////////CONTENT////////////////////// -->
+        <div class="container p-2 FontGBook" style="width: 100%" id="myContent" onClick="collapsedBurger();">
+            <div class="row pb-4 subtitle">
+                <div class="col">
+                    <a href="index.html" class="link-text-black bold ">HOME /</a>
+                    <span class="link-text-blue-bold2">E-CATALOGUE</span>
+                    <hr class="hrline" id="myHr">
+                </div>
+            </div>
+            <h5 class="link-text-black FontGM2">HOME FURNITURE</h5>
+            <p style="font-size: 16px;">Everyone has a different definition of livings. Therefore, we are strongly committed to developing innovative home furniture to meet the variety of living styles, giving exceptional experiences for every family, and igniting inspiration.</p>
+
+            <div class="row pb-4 paddesk">
+
+                <div class="col" style="display: flex; padding: 0px 0px 0px 2px">
+                    <img src="img/10_BEDROOM 5 FINAL Merge copy2.jpg" class="img-fluid" alt="">
+                </div>
+                <div id="myContentDtl" class="col-lg-4 FontGM" style="background-color: gainsboro;">
+                    <ul class="padingImgeCol">
+                        <a href="https://www.modernform.co.th/export/pdf.js/web/viewer.html?file=..%2F..%2F..%2Fstocks%2Fe_catalog%2Fo0x0%2Fzk%2Fnn%2F1mbczknnkn284okwskw%2F12.12MARBLE---QUARTZITE-CATALOG_compressed.pdf" target="_blank" class="link-text-black">
+                            <li class="media my-4">
+                                <img src="img/newdownload.png" class="mr-3 img-fluid" alt="">
+                                <div class="media-body">Marble & Quartzite</div>
+                            </li>
+                        </a>
+                        <a href="https://modernform.cdnboost.com/stocks/e_catalog/o0x0/fx/pq/1m12fxpq8ucgos0cc8o/Catalogue-modernform-HDP.-05-2022.2.3.pdf" target="_blank" class="link-text-black">
+                            <li class="media my-4">
+                                <img src="img/newdownload.png" class="mr-3 img-fluid" alt="">
+                                <div class="media-body">HDP</div>
+                            </li>
+                        </a>
+                        <a href="https://modernform.cdnboost.com/stocks/e_catalog/o0x0/fv/no/g3e3fvnoqc/Custom-SOFA-%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%B9%E0%B9%88_compressed.pdf" target="_blank" class="link-text-black">
+                            <li class="media my-4">
+                                <img src="img/newdownload.png" class="mr-3 img-fluid" alt="">
+                                <div class="media-body">Custom Sofa</div>
+                            </li>
+                        </a>
+                        <a href="https://modernform.cdnboost.com/stocks/e_catalog/o0x0/2k/c0/fmhi2kc0bp/Signature.pdf" target="_blank" class="link-text-black">
+                            <li class="media my-4">
+                                <img src="img/newdownload.png" class="mr-3 img-fluid" alt="">
+                                <div class="media-body">Modernform Signature</div>
+                            </li>
+                        </a>
+                        <a href="https://modernform.cdnboost.com/stocks/e_catalog/o0x0/tw/u4/1m4rtwu413400gk4ocg/Space-solution-Spreads-Final_compressed.pdf" target="_blank" class="link-text-black">
+                            <li class="media my-4">
+                                <img src="img/newdownload.png" class="mr-3 img-fluid" alt="">
+                                <div class="media-body">Space Solution</div>
+                            </li>
+                        </a>
+                        <a href="https://modernform.cdnboost.com/stocks/e_catalog/o0x0/cw/k5/fxxxcwk57o/DINING-ROOM-Catalog-%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7_compressed.pdf" target="_blank" class="link-text-black">
+                            <li class="media my-4">
+                                <img src="img/newdownload.png" class="mr-3 img-fluid" alt="">
+                                <div class="media-body">Diningroom</div>
+                            </li>
+                        </a>
+                        <a href="https://modernform.cdnboost.com/stocks/e_catalog/o0x0/zr/3e/fmhhzr3enb/Bedroom-2.pdf" target="_blank" class="link-text-black">
+                            <li class="media my-4">
+                                <img src="img/newdownload.png" class="mr-3 img-fluid" alt="">
+                                <div class="media-body">Bedroom</div>
+                            </li>
+                        </a>
+                        <a href="https://modernform.cdnboost.com/stocks/e_catalog/o0x0/3v/mn/1lq33vmn3an4oc0g0gc/SOFA---LOUNGE-spreads_compressed.pdf" target="_blank" class="link-text-black">
+                            <li class="media my-4">
+                                <img src="img/newdownload.png" class="mr-3 img-fluid" alt="">
+                                <div class="media-body">Sofa &AMP; Lounge</div>
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="nav_e_cat_desk" class="row pb-4  FontGM justify-content-between" style="font-size: 16px;">
+                <div class="col d-flex justify-content-between phonepad">
+                    <a href="e-cat-of.html" class="link-text-black">
+                    &lt; OFFICE FURNITURE</a>
+                    <a href="" class="link-text-black "></a>
+                    <a href="e-cat-kf.html" class="link-text-black ">KITCHEN FURNITURE &gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /CONTENT -->
+
+    <!-- //////////////////////FOOTER////////////////////// -->
+    <div id="myFooter" class="row mt-6 d-flex justify-content-center lgmd1 FontGBook" onClick="collapsedBurger();">
+
+        <div id="ftcon">
+            <a id="ftMail" href="mailto:export@modernform.co.th" target="_blank" class="link-text-white col-md-3  align-items-center">
+                <img src="img/footer/path350.png" width="22" height="22" alt="">
+                <span class="ftmb-pad">&nbsp;export@modernform.co.th</span>
+            </a>
+        </div>
+
+        <a id="ftPhoneNo" href="tel:+66-2-094-9934 " target="_blank" class="link-text-white col-md-2  align-items-center">
+            <img src="img/footer/phone_icon.png" width="22" height="22" alt="">
+            <span class="ftmb-pad" style="margin-left: 5px; margin-top: 2px;">+66 2 094 9934</span>
+        </a>
+        <a id="ftFacebook" href="https://www.facebook.com/modernformcompany/" target="_blank" class="link-text-white  col-md-2   align-items-center">
+            <img src="img/footer/facebook_icon.png " width="22 " height="22 " alt=" ">
+            <span class="ftmb-pad">&nbsp;modernform furniture</span>
+        </a>
+
+        <a id="ftline" class="link-text-white  align-items-center col-md-2 ">
+            <img src="img/footer/line_icon.png " width="22 " height="22 " alt=" ">
+            <span class="ftmb-pad">&nbsp;@modernform</span>
+        </a>
+
+        <a id="ftlogo" href="https://www.modernform.co.th/ " target="_blank " class="col-md-2 ftipad ftmb-logo-pad">
+            <img src="img/footer/footermodernform.png " alt=" ">
+        </a>
+
+    </div>
+    <!-- /FOOTER -->
+
+    <script>
+        var forEach = function(t, o, r) {
+            if ("[object Object]" === Object.prototype.toString.call(t))
+                for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+            else
+                for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+        };
+        var hamburgers = document.querySelectorAll(".hamburger");
+        if (hamburgers.length > 0) {
+            forEach(hamburgers, function(hamburger) {
+                hamburger.addEventListener("click", function() {
+                    this.classList.toggle("is-active");
+                }, false);
+            });
+        }
+
+        function collapsedBurger() {
+            if ($('#myHamburger').is('.is-active')) {
+                $('.collapse').collapse('hide');
+                $("#myHamburger").removeClass('is-active');
+                $("#myHamburger").addClass('collapsed');
+            }
+        }
+    </script>
+</body>
+
+</html>
